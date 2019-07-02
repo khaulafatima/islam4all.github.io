@@ -3,7 +3,7 @@
     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
     <channel>
         <atom:link href="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/podcast/lectures.xml" rel="self" type="application/rss+xml" />
-        <title>Khurram Murrad lectures</title>
+        <title>Khurram Murrad Lectures</title>
         <link>https://khaulafatima.github.io/islam4all.github.io/</link>
         <description>Collection of lecture by Islamic Scholar Khurram Murrad in Urdu.</description>
         <managingEditor>khaulafatimalko@gmail.com</managingEditor>
@@ -12,5 +12,41 @@
         <creativeCommons:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
         <pubDate>Mon, 29Jun 2019 22:39:00 GMT -05:00</pubDate>
         <lastBuildDate>Mon, 29Jun 2019 22:39:00 GMT -05:00</lastBuildDate>
+        <image>
+            <url>https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png</url>
+            <title>Khurram Murrad Lectures</title>
+            <link>https://khaulafatima.github.io/islam4all.github.io/</link>
+        </image>
+        <docs>http://www.rssboard.org/rss-specification</docs>
+        <itunes:author>islam4all</itunes:author>
+        <itunes:keywords>spirituality,religion,islam,urdu,hindi</itunes:keywords>
+        <itunes:category text="Religion & Spirituality"/>
+        <itunes:explicit>clean</itunes:explicit>
+        <itunes:image href="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png"/>
+        <itunes:owner>
+        <itunes:name><![CDATA[Islam4All]]></itunes:name>
+            <itunes:email>khaulafatima@gmaill.com</itunes:email>
+        </itunes:owner>
+        <item>
+            <title>Lecture 1: Talawat E Quran Majeed Ke Adab</title>
+            <link>https://ia801405.us.archive.org/27/items/talawatequranmajeedkeadab/Talawat_e_Quran_Majeed_Ke_Adab.mp3</link>
+            <description>
+                In this udru speech well known Speaker Khurram Murrad talk about list of points to be considered while reading and getting benefit out of the holy book Quran.
+            </description>
+            <pubDate>Mon, 29Jun 2019 22:39:00 GMT -05:00</pubDate>
+            <guid isPermaLink="true">https://ia801405.us.archive.org/27/items/talawatequranmajeedkeadab/Talawat_e_Quran_Majeed_Ke_Adab.mp3</guid>
+
+            <media:content medium="audio" url="https://ia801405.us.archive.org/27/items/talawatequranmajeedkeadab/Talawat_e_Quran_Majeed_Ke_Adab.mp3" type="audio/mpeg" isDefault="true" expression="full" duration="3703">
+            <media:title type="plain">Lecture 1: Talawat E Quran Majeed Ke Adab</media:title>
+            <media:description>In this udru speech well known Speaker Khurram Murrad talk about list of points to be considered while reading and getting benefit out of the holy book Quran.</media:description>
+            <media:rating scheme="urn:simple">nonadult</media:rating>
+            <media:thumbnail url="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png"/>
+            <media:keywords>islam, urdu , hindi , Religion, spirituality</media:keywords>
+            </media:content>
+            <enclosure url="https://ia801405.us.archive.org/27/items/talawatequranmajeedkeadab/Talawat_e_Quran_Majeed_Ke_Adab.mp3" length="11113657" type="audio/mpeg"/>
+            <itunes:image href="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png"/>
+            <itunes:explicit>clean</itunes:explicit>
+            <itunes:duration>1:01:43</itunes:duration
+        </item>
     </channel>
 </rss>
