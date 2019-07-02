@@ -20,7 +20,7 @@
         <docs>http://www.rssboard.org/rss-specification</docs>
         <itunes:author>islam4all</itunes:author>
         <itunes:keywords>spirituality,religion,islam,urdu,hindi</itunes:keywords>
-        <itunes:category text="Religion & Spirituality"/>
+        <itunes:category text="Religion &amp; Spirituality"/>
         <itunes:explicit>clean</itunes:explicit>
         <itunes:image href="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png"/>
         <itunes:owner>
@@ -35,7 +35,6 @@
             </description>
             <pubDate>Mon, 29Jun 2019 22:39:00 GMT -05:00</pubDate>
             <guid isPermaLink="true">https://ia801405.us.archive.org/27/items/talawatequranmajeedkeadab/Talawat_e_Quran_Majeed_Ke_Adab.mp3</guid>
-
             <media:content medium="audio" url="https://ia801405.us.archive.org/27/items/talawatequranmajeedkeadab/Talawat_e_Quran_Majeed_Ke_Adab.mp3" type="audio/mpeg" isDefault="true" expression="full" duration="3703">
             <media:title type="plain">Lecture 1: Talawat E Quran Majeed Ke Adab</media:title>
             <media:description>In this udru speech well known Speaker Khurram Murrad talk about list of points to be considered while reading and getting benefit out of the holy book Quran.</media:description>
