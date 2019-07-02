@@ -2,7 +2,15 @@
     xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule"
     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
     <channel>
-        <atom:link href="https://example.com/rss/myawesomepodcast.xml" rel="self" type="application/rss+xml" />
-
+        <atom:link href="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/podcast/lectures.xml" rel="self" type="application/rss+xml" />
+        <title>Khurram Murrad lectures</title>
+        <link>https://khaulafatima.github.io/islam4all.github.io/</link>
+        <description>Collection of lecture by Islamic Scholar Khurram Murrad in Urdu.</description>
+        <managingEditor>khaulafatimalko@gmail.com</managingEditor>
+        <webMaster>khaulafatimalko@gmail.com</webMaster>
+        <language>en-us</language>
+        <creativeCommons:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+        <pubDate>Mon, 29Jun 2019 22:39:00 GMT -05:00</pubDate>
+        <lastBuildDate>Mon, 29Jun 2019 22:39:00 GMT -05:00</lastBuildDate>
     </channel>
 </rss>
