@@ -10,7 +10,10 @@
 
       <p style="font-family:monospace;" >
          <%- JSON.stringify(public._data.scholars) %>
-         <% for(var i = public._data.scholars.length; i >== 0 ; i++) {%>
+         <% for(var i = 0; i < public._data.scholars.length; i++) {%>
+            <% if (public._data.scholars[i].publish_status) {%>
+               <%= public._data.scholars[i].index_no %>.
+            <% } %>
          <% } %>
       </p>
     </body>
