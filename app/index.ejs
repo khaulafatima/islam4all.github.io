@@ -7,12 +7,29 @@
       <h1 style="font-family:monospace;">About</h1>
       <p style="font-family:monospace;"><%= about %></p>
       <h2 style="font-family:monospace;">Name of Scholar</h1>
-
       <p style="font-family:monospace;" >
-         <%- JSON.stringify(public._data.scholars) %>
+
          <% for(var i = 0; i < public._data.scholars.length; i++) {%>
             <% if (public._data.scholars[i].publish_status) {%>
-               <%= public._data.scholars[i].index_no %>.
+               <%= public._data.scholars[i].index_no %>. <a href="<%= public._data.scholars[i].wiki_link%>"><%= public._data.scholars[i].scholar_name %></a>
+               <br/>
+               <br/>
+               <% if (public._data.scholars[i].google_play_link) {%>
+                  <a href="<%= public._data.scholars[i].google_play_link %>">Listen on Google Play Music</a>
+                  <br/>
+                  <br/>
+               <% } %>
+
+               <% if (public._data.scholars[i].itunes_link) {%>
+                  <a href="<%= public._data.scholars[i].itunes_link%>">Listen on itunes</a>
+                  <br/>
+                  <br/>
+               <% } %>
+               <% if (public._data.scholars[i].subscribeonandroid_link) {%>
+                  <a href="<%= public._data.scholars[i].subscribeonandroid_link %>">Subscribe on Android</a>
+                  <br/>
+                  <br/>
+               <% } %>
             <% } %>
          <% } %>
       </p>

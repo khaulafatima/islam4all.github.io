@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npm i -g harp && npm i -g ejs-lint",
+    "preinstall": "npm i -g harp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
