@@ -14,7 +14,8 @@ If u can like to contribute plz branch out from the master and create a pull req
 
 //TO DO FOR FUTURE
 1. small script to download the youtube video as mp3.
-2. script to generated pages and xml to `gh-pages` brnach after `harp compile app` step
+2. script to generated pages and xml to `gh-pages` brnach after `harp compile app` step 
+    and than upload it the required branch for publishing.
 3. contribution for image banner creator for various speaker. 
 
 

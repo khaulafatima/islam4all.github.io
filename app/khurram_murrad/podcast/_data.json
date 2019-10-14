@@ -1,6 +1,7 @@
 {
-    "data":  [
+    "podcast_list":  [
         {
+            "publish_status": true,
             "atom_link" : null, 
             "title": null,
             "description": null,
