@@ -12,9 +12,15 @@ The respective `_data.json` is used for either index.js or generating xml file f
 
 If u can like to contribute plz branch out from the master and create a pull request.
 
-TO DO FOR FUTURE ,
+//TO DO FOR FUTURE
 1. small script to download the youtube video as mp3.
 2. script to generated pages and xml to `gh-pages` brnach after `harp compile app` step
+3. contribution for image banner creator for various speaker. 
+
+
+Out this year theme of the project is Space.
+
+Dedicated to all the people who are trying to remove this ignorance and spreading love!.
 
 
 plz refer : https://dev.to/codemouse92/self-hosting-a-podcast-4b3f

@@ -1,3 +1,33 @@
 {
-    
+    "data":  [
+        {
+            "atom_link" : null, 
+            "title": null,
+            "description": null,
+            "managingEditor": null,
+            "webMaster": null,
+            "language":null,
+            "creativeCommons:license": null,
+            "pubDate": null,
+            "lastBuildDate": null,
+            "image": {
+                "url": null,
+                "title": null,
+                "link": null
+            },
+            "docs": null,
+            "itunes" : {
+                "author": null,
+                "keywords": null,
+                "category": null,
+                "explicit": null,
+                "image": null,
+                "episode": null,
+                "owner": {
+                    "name": null,
+                    "email": null
+                }
+            }
+        }   
+    ]
 }
