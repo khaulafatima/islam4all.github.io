@@ -1,34 +1,54 @@
 {
+    "channel_info": {
+        "href" : "https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/podcast/lectures.xml",
+        "title": "Khurram Murrad Lectures",
+        "link": "https://khaulafatima.github.io/islam4all.github.io/",
+        "description": "Collection of lecture by Islamic Scholar Khurram Murrad in Urdu.",
+        "managingEditor": "khaulafatimalko@gmail.com",
+        "webMaster": "khaulafatimalko@gmail.com",
+        "language": "en-us",
+        "image": {
+            "url": "https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png",
+            "title": "Khurram Murrad Lectures"
+        },
+        "itunes" : {
+            "author": "islam4all",
+            "keywords": "spirituality,religion,islam,urdu,hindi",
+            "category": "Religion &amp; Spirituality",
+            "explicit": "clean",
+            "episode": null,
+            "owner": {
+                "name": "<![CDATA[Islam4All]]>",
+                "email": "khaulafatimalko@gmail.com"
+            }
+        }
+    },
     "podcast_list":  [
         {
             "publish_status": true,
-            "atom_link" : null, 
-            "title": null,
-            "description": null,
-            "managingEditor": null,
-            "webMaster": null,
-            "language":null,
-            "creativeCommons:license": null,
-            "pubDate": null,
-            "lastBuildDate": null,
-            "image": {
-                "url": null,
-                "title": null,
-                "link": null
-            },
-            "docs": null,
-            "itunes" : {
-                "author": null,
-                "keywords": null,
-                "category": null,
-                "explicit": null,
-                "image": null,
-                "episode": null,
-                "owner": {
-                    "name": null,
-                    "email": null
-                }
+            "title": "Lecture 2: Sabr",
+            "link": "https://ia601404.us.archive.org/34/items/sabar_201907/Sabar.mp3",
+            "description": "Urdu Speech by Islamic Scholar Khurram Murad on topic Sabr or patience or endurance and speaks about it virtues.",
+            "pubDate": "Mon, 01Jul 2019 22:39:00 GMT",
+            "duration_in_sec": "3098",
+            "length_in_bytes": "9299062",
+            "keyword": "islam, urdu , hindi , Religion, spirituality, patience",
+            "itunes": {
+                "duration": "00:53:38"
             }
-        }   
+        },
+        {
+            "publish_status": true,
+            "title": "Lecture 1: Talawat E Quran Majeed Ke Adab",
+            "link": "https://ia801405.us.archive.org/27/items/talawatequranmajeedkeadab/Talawat_e_Quran_Majeed_Ke_Adab.mp3",
+            "description": "In this udru speech well known Speaker Khurram Murrad talk about list of points to be considered while reading and getting benefit out of the holy book Quran.",
+            "pubDate": "Mon, 29Jun 2019 22:39:00 GMT",
+            "duration_in_sec": "3703",
+            "length_in_bytes": "11113657",
+            "keyword": "islam, urdu , hindi , Religion, spirituality",
+            "itunes": {
+                "duration": "1:01:43"
+            }
+         }
     ]
 }
