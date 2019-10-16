@@ -1,3 +1,33 @@
 <%- include('./../../xml_partial/_header') %>
-
+    <channel>
+        <atom:link href="<%= public.khurram_murrad._data.channel_info.href %>" rel="self" type="application/rss+xml" />
+        <title><%= public.khurram_murrad._data.channel_info.title %></title>
+        <link><%= public.khurram_murrad._data.channel_info.link %></link>
+        <description><%= public.khurram_murrad._data.channel_info.description %></description>
+        <managingEditor><%= public.khurram_murrad._data.channel_info.managingEditor %></managingEditor>
+        <webMaster><%= public.khurram_murrad._data.channel_info.managingEditor %></webMaster>
+        <language><%= public.khurram_murrad._data.channel_info.language %></language>
+        <creativeCommons:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+        <pubDate><%= public.khurram_murrad._data.channel_info.language %></pubDate>
+        <lastBuildDate><%= public.khurram_murrad._data.podcast_list[0].pubDate %></lastBuildDate>
+        <image>
+            <url><%= public.khurram_murrad._data.channel_info.image.url %></url>
+            <title><%= public.khurram_murrad._data.channel_info.title %></title>
+            <link><%= public.khurram_murrad._data.channel_info.link %></link>
+        </image>
+        <docs>http://www.rssboard.org/rss-specification</docs>
+        <itunes:author><%= public.khurram_murrad._data.channel_info.itunes.author %></itunes:author>
+        <itunes:keywords><%= public.khurram_murrad._data.channel_info.itunes.keywords %></itunes:keywords>
+        <itunes:category text="<%= public.khurram_murrad._data.channel_info.itunes.category %>"/>
+        <itunes:explicit>clean</itunes:explicit>
+        <itunes:image href="<%= public.khurram_murrad._data.channel_info.image.url %>"/>
+        <itunes:owner>
+            <itunes:name><%= public.khurram_murrad._data.channel_info.itunes.owner.name %></itunes:name>
+            <itunes:email><%= public.khurram_murrad._data.channel_info.itunes.owner.email %></itunes:email>
+        </itunes:owner>
+        <% for(var i = 0; i < public.khurram_murrad._data.podcast_list.length ; i++) {%>
+            <% if (public.khurram_murrad._data.podcast_list.publish_status) {%>
+            <% } %>
+        <% } %>
+    </channel>
 <%- include('./../../xml_partial/_footer') %>
