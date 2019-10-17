@@ -25,9 +25,27 @@
             <itunes:name><%= public.khurram_murrad._data.channel_info.itunes.owner.name %></itunes:name>
             <itunes:email><%= public.khurram_murrad._data.channel_info.itunes.owner.email %></itunes:email>
         </itunes:owner>
-        <% for(var i = 0; i < public.khurram_murrad._data.podcast_list.length ; i++) {%>
-            <% if (public.khurram_murrad._data.podcast_list.publish_status) {%>
-            <% } %>
-        <% } %>
+        <% for(var i = 0; i < public.khurram_murrad._data.podcast_list.length ; i++) {-%>
+            <% if (public.khurram_murrad._data.podcast_list[i].publish_status) {-%>
+                <item>
+                    <title><%= public.khurram_murrad._data.podcast_list[i].title %></title>
+                    <link><%= public.khurram_murrad._data.podcast_list[i].link %></link>
+                    <description><%= public.khurram_murrad._data.podcast_list[i].description %></description>
+                    <pubDate><%= public.khurram_murrad._data.podcast_list[i].pubDate %></pubDate>
+                    <guid isPermaLink="true"><%= public.khurram_murrad._data.podcast_list[i].link %></guid>
+                    <media:content medium="audio" url="<%= public.khurram_murrad._data.podcast_list[i].link %>" type="audio/mpeg" isDefault="true" expression="full" duration="<%= public.khurram_murrad._data.podcast_list[i].duration_in_sec %>">
+                        <media:title type="plain"><%= public.khurram_murrad._data.podcast_list[i].title %></media:title>
+                        <media:description><%= public.khurram_murrad._data.podcast_list[i].description %></media:description>
+                        <media:rating scheme="urn:simple">nonadult</media:rating>
+                        <media:thumbnail url="<%= public.khurram_murrad._data.channel_info.image.url %>"/>
+                        <media:keywords><%= public.khurram_murrad._data.podcast_list[i].keywords %></media:keywords>
+                    </media:content>
+                    <enclosure url="<%= public.khurram_murrad._data.podcast_list[i].link %>" length="<%= public.khurram_murrad._data.podcast_list[i].length_in_bytes %>" type="audio/mpeg"/>
+                    <itunes:image href="<%= public.khurram_murrad._data.channel_info.image.url %>"/>
+                    <itunes:explicit>clean</itunes:explicit>
+                    <itunes:duration><%= public.khurram_murrad._data.podcast_list[i].itunes.duration %></itunes:duration>
+                </item>
+            <% } -%>
+        <% } -%>
     </channel>
 <%- include('./../../xml_partial/_footer') %>

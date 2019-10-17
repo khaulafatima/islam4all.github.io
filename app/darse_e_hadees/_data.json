@@ -1,0 +1,41 @@
+{
+    "channel_info": {
+        "href" : "https://khaulafatima.github.io/islam4all.github.io/darse_e_hadees/podcast/lectures.xml",
+        "title": "Dars-e-Hadees By Maulana Naseem Ghazi Falahi",
+        "link": "https://khaulafatima.github.io/islam4all.github.io/",
+        "description": "Collection of lecture on Hadees by Islamic Scholar Maulana Naseem Ghazi Falahi in Urdu.",
+        "managingEditor": "khaulafatimalko@gmail.com",
+        "webMaster": "khaulafatimalko@gmail.com",
+        "language": "en-us",
+        "image": {
+            "url": "https://khaulafatima.github.io/islam4all.github.io/darse_e_hadees/img/MaulanaNaseemGhaziFalahi1400x1400.png",
+            "title": "Dars-e-Hadees By Maulana Naseem Ghazi Falahi"
+        },
+        "itunes" : {
+            "author": "islam4all",
+            "keywords": "spirituality,religion,islam,urdu,hindi, hadees",
+            "category": "Religion &amp; Spirituality",
+            "explicit": "clean",
+            "episode": null,
+            "owner": {
+                "name": "<![CDATA[Islam4All]]>",
+                "email": "khaulafatimalko@gmail.com"
+            }
+        }
+    },
+    "podcast_list":  [
+        {
+            "publish_status": true,
+            "title": "Lecture 1: Talawat E Quran Majeed Ke Adab",
+            "link": "https://ia601404.us.archive.org/1/items/maulananaseemghazifalahidarsehadeesvideo1/Maulana_Naseem_Ghazi_Falahi_Dar_e_Hadees.mp3",
+            "description": "Moulana talk how person unknowingly earns God respect and also unknowingly do mistake through his/her tongue.",
+            "pubDate": "Thu 17Oct 2019 10:11:59 GMT",
+            "duration_in_sec": "707",
+            "length_in_bytes": "34944",
+            "keywords": "islam, urdu , hindi , Religion, spirituality",
+            "itunes": {
+                "duration": "00:11:47"
+            }
+         }
+    ]
+}

@@ -1,0 +1,51 @@
+<%- include('./../../xml_partial/_header') %>
+    <channel>
+        <atom:link href="<%= public.darse_e_hadees._data.channel_info.href %>" rel="self" type="application/rss+xml" />
+        <title><%= public.darse_e_hadees._data.channel_info.title %></title>
+        <link><%= public.darse_e_hadees._data.channel_info.link %></link>
+        <description><%= public.darse_e_hadees._data.channel_info.description %></description>
+        <managingEditor><%= public.darse_e_hadees._data.channel_info.managingEditor %></managingEditor>
+        <webMaster><%= public.darse_e_hadees._data.channel_info.managingEditor %></webMaster>
+        <language><%= public.darse_e_hadees._data.channel_info.language %></language>
+        <creativeCommons:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+        <pubDate><%= public.darse_e_hadees._data.channel_info.language %></pubDate>
+        <lastBuildDate><%= public.darse_e_hadees._data.podcast_list[0].pubDate %></lastBuildDate>
+        <image>
+            <url><%= public.darse_e_hadees._data.channel_info.image.url %></url>
+            <title><%= public.darse_e_hadees._data.channel_info.title %></title>
+            <link><%= public.darse_e_hadees._data.channel_info.link %></link>
+        </image>
+        <docs>http://www.rssboard.org/rss-specification</docs>
+        <itunes:author><%= public.darse_e_hadees._data.channel_info.itunes.author %></itunes:author>
+        <itunes:keywords><%= public.darse_e_hadees._data.channel_info.itunes.keywords %></itunes:keywords>
+        <itunes:category text="<%= public.darse_e_hadees._data.channel_info.itunes.category %>"/>
+        <itunes:explicit>clean</itunes:explicit>
+        <itunes:image href="<%= public.darse_e_hadees._data.channel_info.image.url %>"/>
+        <itunes:owner>
+            <itunes:name><%= public.darse_e_hadees._data.channel_info.itunes.owner.name %></itunes:name>
+            <itunes:email><%= public.darse_e_hadees._data.channel_info.itunes.owner.email %></itunes:email>
+        </itunes:owner>
+        <% for(var i = 0; i < public.darse_e_hadees._data.podcast_list.length ; i++) {-%>
+            <% if (public.darse_e_hadees._data.podcast_list[i].publish_status) {-%>
+                <item>
+                    <title><%= public.darse_e_hadees._data.podcast_list[i].title %></title>
+                    <link><%= public.darse_e_hadees._data.podcast_list[i].link %></link>
+                    <description><%= public.darse_e_hadees._data.podcast_list[i].description %></description>
+                    <pubDate><%= public.darse_e_hadees._data.podcast_list[i].pubDate %></pubDate>
+                    <guid isPermaLink="true"><%= public.darse_e_hadees._data.podcast_list[i].link %></guid>
+                    <media:content medium="audio" url="<%= public.darse_e_hadees._data.podcast_list[i].link %>" type="audio/mpeg" isDefault="true" expression="full" duration="<%= public.darse_e_hadees._data.podcast_list[i].duration_in_sec %>">
+                        <media:title type="plain"><%= public.darse_e_hadees._data.podcast_list[i].title %></media:title>
+                        <media:description><%= public.darse_e_hadees._data.podcast_list[i].description %></media:description>
+                        <media:rating scheme="urn:simple">nonadult</media:rating>
+                        <media:thumbnail url="<%= public.darse_e_hadees._data.channel_info.image.url %>"/>
+                        <media:keywords><%= public.darse_e_hadees._data.podcast_list[i].keywords %></media:keywords>
+                    </media:content>
+                    <enclosure url="<%= public.darse_e_hadees._data.podcast_list[i].link %>" length="<%= public.darse_e_hadees._data.podcast_list[i].length_in_bytes %>" type="audio/mpeg"/>
+                    <itunes:image href="<%= public.darse_e_hadees._data.channel_info.image.url %>"/>
+                    <itunes:explicit>clean</itunes:explicit>
+                    <itunes:duration><%= public.darse_e_hadees._data.podcast_list[i].itunes.duration %></itunes:duration>
+                </item>
+            <% } -%>
+        <% } -%>
+    </channel>
+<%- include('./../../xml_partial/_footer') %>
