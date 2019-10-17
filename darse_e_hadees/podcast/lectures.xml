@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+    xmlns:media="http://search.yahoo.com/mrss/" 
+    xmlns:atom="http://www.w3.org/2005/Atom" 
+    xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" 
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+    <channel>
+        <atom:link href="https://khaulafatima.github.io/islam4all.github.io/darse_e_hadees/podcast/lectures.xml" rel="self" type="application/rss+xml" />
+        <title>Dars-e-Hadees By Maulana Naseem Ghazi Falahi</title>
+        <link>https://khaulafatima.github.io/islam4all.github.io/</link>
+        <description>Collection of lecture on Hadees by Islamic Scholar Maulana Naseem Ghazi Falahi in Urdu.</description>
+        <managingEditor>khaulafatimalko@gmail.com</managingEditor>
+        <webMaster>khaulafatimalko@gmail.com</webMaster>
+        <language>en-us</language>
+        <creativeCommons:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+        <pubDate>en-us</pubDate>
+        <lastBuildDate>Thu 17Oct 2019 10:11:59 GMT</lastBuildDate>
+        <image>
+            <url>https://khaulafatima.github.io/islam4all.github.io/darse_e_hadees/img/MaulanaNaseemGhaziFalahi1400x1400.png</url>
+            <title>Dars-e-Hadees By Maulana Naseem Ghazi Falahi</title>
+            <link>https://khaulafatima.github.io/islam4all.github.io/</link>
+        </image>
+        <docs>http://www.rssboard.org/rss-specification</docs>
+        <itunes:author>islam4all</itunes:author>
+        <itunes:keywords>spirituality,religion,islam,urdu,hindi, hadees</itunes:keywords>
+        <itunes:category text="Religion &amp;amp; Spirituality"/>
+        <itunes:explicit>clean</itunes:explicit>
+        <itunes:image href="https://khaulafatima.github.io/islam4all.github.io/darse_e_hadees/img/MaulanaNaseemGhaziFalahi1400x1400.png"/>
+        <itunes:owner>
+            <itunes:name>&lt;![CDATA[Islam4All]]&gt;</itunes:name>
+            <itunes:email>khaulafatimalko@gmail.com</itunes:email>
+        </itunes:owner>
+                                    <item>
+                    <title>Lecture 1: Talawat E Quran Majeed Ke Adab</title>
+                    <link>https://ia601404.us.archive.org/1/items/maulananaseemghazifalahidarsehadeesvideo1/Maulana_Naseem_Ghazi_Falahi_Dar_e_Hadees.mp3</link>
+                    <description>Moulana talk how person unknowingly earns God respect and also unknowingly do mistake through his/her tongue.</description>
+                    <pubDate>Thu 17Oct 2019 10:11:59 GMT</pubDate>
+                    <guid isPermaLink="true">https://ia601404.us.archive.org/1/items/maulananaseemghazifalahidarsehadeesvideo1/Maulana_Naseem_Ghazi_Falahi_Dar_e_Hadees.mp3</guid>
+                    <media:content medium="audio" url="https://ia601404.us.archive.org/1/items/maulananaseemghazifalahidarsehadeesvideo1/Maulana_Naseem_Ghazi_Falahi_Dar_e_Hadees.mp3" type="audio/mpeg" isDefault="true" expression="full" duration="707">
+                        <media:title type="plain">Lecture 1: Talawat E Quran Majeed Ke Adab</media:title>
+                        <media:description>Moulana talk how person unknowingly earns God respect and also unknowingly do mistake through his/her tongue.</media:description>
+                        <media:rating scheme="urn:simple">nonadult</media:rating>
+                        <media:thumbnail url="https://khaulafatima.github.io/islam4all.github.io/darse_e_hadees/img/MaulanaNaseemGhaziFalahi1400x1400.png"/>
+                        <media:keywords>islam, urdu , hindi , Religion, spirituality</media:keywords>
+                    </media:content>
+                    <enclosure url="https://ia601404.us.archive.org/1/items/maulananaseemghazifalahidarsehadeesvideo1/Maulana_Naseem_Ghazi_Falahi_Dar_e_Hadees.mp3" length="34944" type="audio/mpeg"/>
+                    <itunes:image href="https://khaulafatima.github.io/islam4all.github.io/darse_e_hadees/img/MaulanaNaseemGhaziFalahi1400x1400.png"/>
+                    <itunes:explicit>clean</itunes:explicit>
+                    <itunes:duration>00:11:47</itunes:duration>
+                </item>
+                        </channel>
+</rss>
