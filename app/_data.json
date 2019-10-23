@@ -7,7 +7,8 @@
             "wiki_link" : "https://en.wikipedia.org/wiki/Khurram_Murad",
             "google_play_link": "https://playmusic.app.goo.gl/?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&apn=com.google.android.music&link=https://play.google.com/music/m/Itsjskwlx2xhnjvasikb5pmlnxy?t%3DKhurram_Murrad_Lectures%26pcampaignid%3DMKT-na-all-co-pr-mu-pod-16",
             "itunes_link": "https://pcr.apple.com/id1471393649",
-            "subscribeonandroid_link": "http://www.subscribeonandroid.com/khaulafatima.github.io/islam4all.github.io/khurram_murrad/podcast/lectures.xml"
+            "subscribeonandroid_link": "http://www.subscribeonandroid.com/khaulafatima.github.io/islam4all.github.io/khurram_murrad/podcast/lectures.xml",
+            "spotify" : null
         },
         {
             "publish_status": true,
@@ -16,7 +17,18 @@
             "wiki_link" : null,
             "google_play_link": "https://playmusic.app.goo.gl/?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&apn=com.google.android.music&link=https://play.google.com/music/m/I3kiaxqfixyc7n53t4vmcujlq2m?t%3DDars-e-Hadees_By_Maulana_Naseem_Ghazi_Falahi%26pcampaignid%3DMKT-na-all-co-pr-mu-pod-16",
             "itunes_link": null,
-            "subscribeonandroid_link": "https://www.subscribeonandroid.com/khaulafatima.github.io/islam4all.github.io/darse_e_hadees/podcast/lectures.xml"
+            "subscribeonandroid_link": "https://www.subscribeonandroid.com/khaulafatima.github.io/islam4all.github.io/darse_e_hadees/podcast/lectures.xml",
+            "spotify" : null
+        },
+        {
+            "publish_status": false,
+            "index_no": 3,
+            "scholar_name": "Muntakhab Nisab By Dr. Israr Ahmed",
+            "wiki_link" : null,
+            "google_play_link": null,
+            "itunes_link": null,
+            "subscribeonandroid_link": null,
+            "spotify" : null
         }
     ]
 }
