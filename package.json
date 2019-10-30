@@ -17,4 +17,12 @@
     "url": "https://github.com/khaulafatima/islam4all.github.io/issues"
   },
   "homepage": "https://github.com/khaulafatima/islam4all.github.io#readme",
+  "dependencies": {
+    "yargs": "^14.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
 }
