@@ -37,6 +37,11 @@ let argv = yargs
         type: 'string',
         description: 'youtube link'
     })
+    .option('output', {
+        alias: 'o',
+        type: 'string',
+        description: 'output directory for the task'
+    })
     .help()
     .argv;
 console.log(argv);
