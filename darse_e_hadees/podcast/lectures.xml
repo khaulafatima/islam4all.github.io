@@ -23,7 +23,9 @@
         <docs>http://www.rssboard.org/rss-specification</docs>
         <itunes:author>islam4all</itunes:author>
         <itunes:keywords>spirituality,religion,islam,urdu,hindi, hadees</itunes:keywords>
-        <itunes:category text="Religion &amp;amp; Spirituality"/>
+        <itunes:category text="Religion &amp; Spirituality">
+                    <itunes:category text="Islam" />
+        </itunes:category>
         <itunes:explicit>clean</itunes:explicit>
         <itunes:image href="https://khaulafatima.github.io/islam4all.github.io/darse_e_hadees/img/MaulanaNaseemGhaziFalahi1400x1400.png"/>
         <itunes:owner>
