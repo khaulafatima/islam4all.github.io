@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npm i -g harp",
+    "build_app": "harp compile app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,7 @@
     "eslint-config-airbnb": "^18.0.1",
     "horizon-youtube-mp3": "^1.9.2",
     "lodash": "^4.17.15",
+    "promise-callbacks": "^3.3.0",
     "save": "^2.4.0",
     "yamljs": "^0.3.0",
     "yargs": "^14.2.0"
