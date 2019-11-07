@@ -1,10 +1,15 @@
-const YAML = require('yamljs');
-const fs = require('fs');
-const chalk = require('chalk');
-const yargs = require('yargs');
-const _ = require('lodash');
-const youtubeDownloader = require('horizon-youtube-mp3');
+const YAML = require('yamljs'),
+    fs = require('fs'),
+    chalk = require('chalk'),
+    yargs = require('yargs'),
+    _ = require('lodash'),
+    youtubeDownloader = require('horizon-youtube-mp3');
+
 const log = console.log;
+const stream = fs.WriteStream;
+
+//const { getInfo , downloadToLocal } = promisify.methods(youtubeDownloader, ['getInfo' , 'downloadToLocal']);
+
 
 // user input will list of url input.yml
 // validate the url
@@ -18,7 +23,7 @@ const log = console.log;
 
     }
 */
-let argv = yargs
+const argv = yargs
     .usage('$0 <command> [option]')
     .command({
         command: 'dw_yt_mp3',
@@ -44,26 +49,49 @@ let argv = yargs
     })
     .help()
     .argv;
-console.log(argv);
 
-let file = null;
+const _getYoutubeUrlInfo = async (url = null)=> {
+    return new Promise((resolved, reject)=> {
+        youtubeDownloader.getInfo(url, (err, data)=> {
+            if (err) return reject(err);
+            resolved(data);
+        });
+    });
+}
+
+const processLink = async (url = null) => {
+    let youtubeInfo = await getInfo(url);
+};
+
+const processYMLFile = (ymlFile= null) => {
+
+    if (fs.existsSync(ymlFile)) {
+        log(log(chalk.red(`msg : yml file 📁 '${ymlFile}' cnt be found`)));
+        return false;
+    }
+    const fileContent = YAML.load(ymlFile);
+    return fileContent;
+};
+
+//various lib for asyn Neo-Async and promise https://github.com/suguru03/aigle
+let file = null,
+    link = null;
 if (_.includes(argv._, 'dy') || _.includes(argv._, 'dw_yt_mp3')) {
     if (argv.yml) {
-         
+        file = argv.yml;
     } else if (argv.link) {
-        log(chalk.green('msg : link downloader 🔗 in development 😉😉😉'));
+        link = argv.link;
+        (async ()=> {
+            let youtubeData = await _getYoutubeUrlInfo(link);
+            if (youtubeData) {
+                log(youtubeData);
+            } else {
+                log(log(chalk.red(`msg : something went wrong`)));
+            }
+        })();
+
     } else {
-        log(chalk.red.bold('msg : 😞😞😞 neither file 📁 or youtubr link 🔗 is provided.'));
+        log(chalk.red.bold('msg : 😞😞😞 neither file 📁 or youtube link 🔗 is provided.'));
         process.exit(0);
     }
 }
-let fileName = null;
-if (fs.existsSync(fileName)) {
-    
-    
-}
-const fileContent = YAML.load(fileName);
-//various lib for asyn Neo-Async and promise https://github.com/suguru03/aigle
-
-
-
