@@ -23,6 +23,18 @@ const readInputFile = async (fileName) => {
 };
 
 
+const filterMp3FileName = async(fileList) => {
+    
+
+    const fileListMp3 = [];    
+    if (!Array.isArray(fileList) || fileList.length === 0) {
+        return Promise.resolve(fileListMp3);
+    }
+    fileList.forEach(element => {
+        if (/\/mp3$/.test(element)) fileListMp3.push(element);
+    });
+    return Promise.resolve(fileListMp3);
+};
 
 const readOutputDir = async (outputDir) => {
     if (!fs.existsSync(outputDir)) {
@@ -32,8 +44,9 @@ const readOutputDir = async (outputDir) => {
     }
     const fileList = fs.readdirSync(outputDir);
     return Promise.resolve(fileList);
+};
 
-}
+
 // read the input file
 // read the out put dir
 // check if the file already exists
@@ -45,8 +58,11 @@ const readOutputDir = async (outputDir) => {
 
     try {
 
-        let fileInput = await readInputFile('./mp3DownloadLink123.txt');
-        let outputDirFiles = await readOutputDir("");
+        const fileInput = await readInputFile('./mp3DownloadLink123.txt');
+        const outputDirFiles = await readOutputDir("");
+        const filemp3 = await filterMp3FileName(outputDirFiles);
+        
+
     } catch(err) {
         console.log(`Error : ${err}`);
     }
