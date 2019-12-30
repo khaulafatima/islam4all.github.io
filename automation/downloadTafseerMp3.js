@@ -1,5 +1,7 @@
 const fs = require('fs')
-    readline = require('readline');;
+    readline = require('readline')
+    asyncForEach = require('async/forEachSeries');
+
 
 const readInputFile = async (fileName) => {
 
@@ -46,6 +48,25 @@ const readOutputDir = async (outputDir) => {
     return Promise.resolve(fileList);
 };
 
+const getMp3FileNameFromUrl = async (url) => {
+    if (typeof url !== String) {
+        return null;
+    }
+    //volume01/(0003)fateha/fateha(intro).mp3
+    if (!/volume\d{2}/.test(url)) return null;
+
+    //now get the mp3 name 
+    let mp3FileName =  null;
+    let tmpMatch = url.match(/.+\/(?<filename>.+\.mp3)$/);
+    if (tmpMatch && tmpMatch.groups && tmpMatch.groups.filename) {
+        mp3FileName = tmpMatch.groups.filename;
+    } 
+    // replacement part of ()
+    mp3FileName = mp3FileName.replace(/\(|\)/gi, "_");
+    //replacement part of %20
+    mp3FileName = mp3FileName.replace(/\%\d{1,}/gi, "");
+    return mp3FileName;
+};
 
 // read the input file
 // read the out put dir
@@ -59,9 +80,17 @@ const readOutputDir = async (outputDir) => {
     try {
 
         const fileInput = await readInputFile('./mp3DownloadLink123.txt');
-        const outputDirFiles = await readOutputDir("");
+        const outputDirFiles = await readOutputDir("");``
         const filemp3 = await filterMp3FileName(outputDirFiles);
-        
+        forEachSeries(fileInput, (urlLink, next)=> {
+            //check in driectory
+
+            // download it if not available
+
+            // get the stats
+
+            //write the json file
+        });
 
     } catch(err) {
         console.log(`Error : ${err}`);
