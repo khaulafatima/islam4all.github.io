@@ -1,7 +1,20 @@
 const fs = require('fs')
     readline = require('readline')
+    path = require('path'),
+    http = require('http'),
     asyncForEach = require('async/forEachSeries');
 
+
+const downloadFile = async (url, destination) => {
+
+    var file = fs.createWriteStream(dest);
+    var request = http.get(url, function (response) {
+        response.pipe(file);
+        file.on('finish', function () {
+            file.close(cb);
+        });
+    });
+};
 
 const readInputFile = async (fileName) => {
 
@@ -36,6 +49,22 @@ const filterMp3FileName = async(fileList) => {
         if (/\/mp3$/.test(element)) fileListMp3.push(element);
     });
     return Promise.resolve(fileListMp3);
+};
+
+
+const readJsonStatFile = async (filePath) => {
+
+    try {
+        if (!fs.existsSync(filePath)) {
+            fs.writeFileSync(filePath, JSON.stringify({}));
+        }
+        const jsonString = fs.readFileSync(filePath);
+        const jsonObj = JSON.parse(jsonString)
+        return Promise.resolve(jsonObj);
+    } catch(err) {
+        console.log('msg : error', err);
+        return Promise.reject('could not read file');
+    }
 };
 
 const readOutputDir = async (outputDir) => {
@@ -79,17 +108,29 @@ const getMp3FileNameFromUrl = async (url) => {
 
     try {
 
+        let outputDir = "";
+        const jsonFileName = "";
+
         const fileInput = await readInputFile('./mp3DownloadLink123.txt');
-        const outputDirFiles = await readOutputDir("");``
+        const outputDirFiles = await readOutputDir("");
+        const jsonObject = await readJsonStatFile(path.join(outputDir, jsonFileName));
         const filemp3 = await filterMp3FileName(outputDirFiles);
         forEachSeries(fileInput, (urlLink, next)=> {
-            //check in driectory
+            //check the file in the dir
+            let fileName = await getMp3FileNameFromUrl(urlLink);
+            if (!fileName) return next(fileName);
+            if (!jsonObject[fileName]) {
+                // download it if not available
 
-            // download it if not available
+            }
+            
+            
 
             // get the stats
 
             //write the json file
+        }, (err)=> {
+
         });
 
     } catch(err) {
