@@ -64,23 +64,26 @@ const downloadFile = (url, dest) => {
  */
 const readInputFile = async (fileName) => {
 
-    const fileInput = [];
-    if ( !fs.existsSync( fileName ) ) {
-        return Promise.reject(`file ${fileName} cant be found!`);
-    }
-    const rd = readline.createInterface({
-        input: fs.createReadStream(fileName),
-        output: process.stdout,
-        console: false
-    });
-    rd.on('line', (line) => {
-        fileInput.push(line);
-    });
-    rd.on('error', (error) => {
-        return Promise.reject( new Error(error));
-    });
-
-    return Promise.resolve(fileInput);
+    return new Promise((resolve, reject) => {
+        const fileInput = [];
+        if ( !fs.existsSync( fileName ) ) {
+            reject(`file ${fileName} cant be found!`);
+        }
+        const rd = readline.createInterface({
+            input: fs.createReadStream(fileName),
+            output: process.stdout,
+            console: false
+        });
+        rd.on('line', (line) => {
+            fileInput.push(line);
+        });
+        rd.on('error', (error) => {
+            reject( new Error(error));
+        });
+        rd.on('close', () => {
+            resolve(fileInput);
+        })
+    });    
 };
 
 
@@ -97,6 +100,18 @@ const filterMp3FileName = async(fileList) => {
     return Promise.resolve(fileListMp3);
 };
 
+
+const writeJsonFile = async (filePath, content) => {
+    return new Promise((resolve, reject)=> {
+        try {
+            let jsonString = JSON.stringify(content);
+            fs.writeFileSync(filePath, jsonString, 'utf8');
+            resolve(true);
+        } catch(err) {
+            reject(err);
+        }
+    });
+};
 
 const readJsonStatFile = async (filePath) => {
 
@@ -145,7 +160,7 @@ const getMp3FileNameFromUrl = async (url) => {
 
 const getMp3Duration = async (filePath) => {
     return new Promise((resolve, reject) => {
-        mp3Duration(filePath, (err, duration) {
+        mp3Duration(filePath, (err, duration) => {
             if (err) reject(err.message);
             //console.log('Your file is ' + duration + ' seconds long');
             resolve(duration);
@@ -188,12 +203,16 @@ const timeConverter =  (number, unit) => {
 
     try {
 
-        let outputDir = "";
-        const jsonFileName = "";
+        let outputDir = "tafeemQuranMp3";
+        const jsonFileName = "fileDownload.json";
 
-        const fileInput = await readInputFile('./mp3DownloadLink123.txt');
-        const outputDirFiles = await readOutputDir(outputDir);
-        const jsonObject = await readJsonStatFile(path.join(outputDir, jsonFileName));
+        const fileInput = await readInputFile(path.join(__dirname,'mp3DownloadLink123.txt'));
+        console.log('+++++++++++++++++++++++++');
+        console.log(`msg : file reading completed. Input file length ${fileInput.length}`);
+        process.exit(0);
+        const outputDirFiles = await readOutputDir(path.join(__dirname , outputDir));
+        
+        const jsonObject = await readJsonStatFile(path.join(__dirname,outputDir, jsonFileName));
         const filemp3s = await filterMp3FileName(outputDirFiles);
         for(const urlLink of fileInput) {
 
