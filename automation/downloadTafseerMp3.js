@@ -88,15 +88,14 @@ const readInputFile = async (fileName) => {
 
 
 const filterMp3FileName = async(fileList) => {
-    
 
     const fileListMp3 = [];    
     if (!Array.isArray(fileList) || fileList.length === 0) {
         return Promise.resolve(fileListMp3);
     }
-    fileList.forEach(element => {
-        if (/\/mp3$/.test(element)) fileListMp3.push(element);
-    });
+    for( const fileName of fileList) {
+        if (/\/mp3$/.test(fileName)) fileListMp3.push(fileName);
+    }
     return Promise.resolve(fileListMp3);
 };
 
@@ -205,15 +204,24 @@ const timeConverter =  (number, unit) => {
 
         let outputDir = "tafeemQuranMp3";
         const jsonFileName = "fileDownload.json";
+        const fileWithUrls = "mp3DownloadLink123.txt";
 
-        const fileInput = await readInputFile(path.join(__dirname,'mp3DownloadLink123.txt'));
-        console.log('+++++++++++++++++++++++++');
+        console.log(`msg : reading file : ${fileWithUrls}`);
+        const fileInput = await readInputFile(path.join(__dirname,fileWithUrls));
         console.log(`msg : file reading completed. Input file length ${fileInput.length}`);
-        process.exit(0);
+
+        console.log(`msg : reading output dir : ${outputDir}`);
         const outputDirFiles = await readOutputDir(path.join(__dirname , outputDir));
-        
+        console.log('msg : dir reading completed.');
+
+        console.log(`msg : reading json file : ${jsonFileName}`);
         const jsonObject = await readJsonStatFile(path.join(__dirname,outputDir, jsonFileName));
+        console.log('msg : json file reading completed.');
+
+        console.log(`msg : filtering mp3 file for output dir ${outputDir}`);
         const filemp3s = await filterMp3FileName(outputDirFiles);
+        console.log(`msg : completed.`);
+
         for(const urlLink of fileInput) {
 
             const fileName = await getMp3FileNameFromUrl(urlLink);
