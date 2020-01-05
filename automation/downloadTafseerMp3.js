@@ -3,11 +3,13 @@ const fs = require('fs')
     path = require('path'),
     http = require('http'),
     _ = require('lodash'),
-    mp3Duration = require('mp3-duration');
-    ;
+    getMP3Duration = require('get-mp3-duration');
+
 
 const downloadFile = (url, dest) => {
+
     return new Promise((resolve, reject) => {
+        return resolve();
         const file = fs.createWriteStream(dest, { flags: "wx" });
 
         const request = http.get(url, response => {
@@ -138,9 +140,8 @@ const readOutputDir = async (outputDir) => {
 };
 
 const getMp3FileNameFromUrl = async (url) => {
-    if (typeof url !== String) {
-        return null;
-    }
+    if (typeof url !== 'string') return null;
+
     //volume01/(0003)fateha/fateha(intro).mp3
     if (!/volume\d{2}/.test(url)) return null;
 
@@ -159,11 +160,14 @@ const getMp3FileNameFromUrl = async (url) => {
 
 const getMp3Duration = async (filePath) => {
     return new Promise((resolve, reject) => {
-        mp3Duration(filePath, (err, duration) => {
-            if (err) reject(err.message);
-            //console.log('Your file is ' + duration + ' seconds long');
+        try {
+            const buffer = fs.readFileSync(filePath);
+            const duration = getMP3Duration(buffer);
             resolve(duration);
-        });
+        } catch(err) {
+            reject(err);
+        }
+
     });
 };
 
@@ -225,6 +229,7 @@ const timeConverter =  (number, unit) => {
         for(const urlLink of fileInput) {
 
             const fileName = await getMp3FileNameFromUrl(urlLink);
+            console.log(`get the file Name : ${fileName}`);
             if ( !fileName) {
                 console.log(`msg : could not get fileName ${fileName} for ${urlLink}`);
                 continue;
@@ -235,21 +240,31 @@ const timeConverter =  (number, unit) => {
                 if (_.includes(filemp3s, fileName)) {
                     console.log(`msg : ${fileName} is available}`);
                     continue;
+                } else {
+                    console.log(`msg : ${fileName} could not be found!`);
                 }
-                const errorMsg = await downloadFile(urlLink, path.join(outputDirFiles, fileName));
+                const errorMsg = await downloadFile(urlLink, path.join(__dirname ,outputDir, fileName));
                 if (errorMsg) {
                     console.log(`error : for file ${fileName} ${errorMsg}`);
                     continue;
+                } else {
+                    console.log(`msg: ${fileName}  downloaded`);
                 }
                 //get stats
-                const stats = fs.statSync(path.join(outputDirFiles, fileName));
+
+                console.log('msg: getting stats for file ...');
+                const stats = fs.statSync(path.join(__dirname ,outputDir, fileName));
                 const fileSizeInBytes = stats.size;
+
+                console.log(`msg: file size in bytes : ${fileSizeInBytes}`);
+
                 //add stats obj to jsonObj
-                const durationInMiliSec  = await getMp3Duration(path.join(outputDirFiles, fileName));
+                const durationInMiliSec  = await getMp3Duration(path.join(__dirname ,outputDir, fileName));
+                console.log(`msg: mili sec : ${durationInMiliSec}`);
                 if (durationInMiliSec instanceof Error) {
                     continue;
                 }
-                const durationInSec =  Math.floor(durationInMiliSec / 1000);
+                const durationInSec =  Math.round(durationInMiliSec / 1000);
                 const timeObj = timeConverter(durationInMiliSec, 'ms');
                 if (timeObj instanceof Error) continue;
 
@@ -263,7 +278,6 @@ const timeConverter =  (number, unit) => {
                 //write the jsonObj to the file
 
                 console.log(jsonObj);
-                
             }
 
 
