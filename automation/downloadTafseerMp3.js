@@ -44,26 +44,7 @@ const downloadFile = (url, dest) => {
         });
     });
 };
-    
 
-/* const downloadFile = async (url, destination) => {
-
-    var file = fs.createWriteStream(destination);
-    var request = http.get(url, (response) => {
-        if () {
-
-        }
-        response.pipe(file);
-        file.on('finish', function () {
-            file.close(cb);
-        }
-        ).on('error', (err) => {             
-            fs.unlink(destination); 
-            if (cb) cb(err.message);
-          });;
-    });
-};
- */
 const readInputFile = async (fileName) => {
 
     return new Promise((resolve, reject) => {
@@ -226,6 +207,7 @@ const timeConverter =  (number, unit) => {
         const filemp3s = await filterMp3FileName(outputDirFiles);
         console.log(`msg : completed.`);
 
+        let indexCount =1 ;
         for(const urlLink of fileInput) {
 
             const fileName = await getMp3FileNameFromUrl(urlLink);
@@ -238,6 +220,7 @@ const timeConverter =  (number, unit) => {
 
                 //check the file in the dir
                 if (_.includes(filemp3s, fileName)) {
+                    indexCount++;
                     console.log(`msg : ${fileName} is available}`);
                     continue;
                 } else {
@@ -245,6 +228,7 @@ const timeConverter =  (number, unit) => {
                 }
                 const errorMsg = await downloadFile(urlLink, path.join(__dirname ,outputDir, fileName));
                 if (errorMsg) {
+                    indexCount++;
                     console.log(`error : for file ${fileName} ${errorMsg}`);
                     continue;
                 } else {
@@ -262,6 +246,7 @@ const timeConverter =  (number, unit) => {
                 const durationInMiliSec  = await getMp3Duration(path.join(__dirname ,outputDir, fileName));
                 console.log(`msg: mili sec : ${durationInMiliSec}`);
                 if (durationInMiliSec instanceof Error) {
+                    indexCount++;
                     continue;
                 }
                 const durationInSec =  Math.round(durationInMiliSec / 1000);
@@ -273,14 +258,19 @@ const timeConverter =  (number, unit) => {
                     duration_in_sec: durationInSec,
                     duration_in_mili_sec: durationInMiliSec,
                     time : `${timeObj.hours}:${timeObj.minutes}:${timeObj.seconds}`,
+                    index: indexCount,
                 };
 
+                jsonObject[fileName] = jsonObj;
+                let err = writeJsonFile(path.join(__dirname,outputDir, jsonFileName), jsonObject);
+                if (err instanceof Error) {
+                    indexCount++;
+                    continue;
+                }
                 //write the jsonObj to the file
-
                 console.log(jsonObj);
+                indexCount++;    
             }
-
-
         }
 
     } catch(err) {
