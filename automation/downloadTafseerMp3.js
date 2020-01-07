@@ -219,16 +219,8 @@ const timeConverter =  (number, unit) => {
                 console.log(`msg : could not get fileName ${fileName} for ${urlLink}`);
                 continue;
             }
-            if  ( !jsonObject[fileName] ) {
+            if  ( !jsonObject[fileName] || !_.includes(filemp3s, fileName)) {
 
-                //check the file in the dir
-                if (_.includes(filemp3s, fileName)) {
-                    indexCount++;
-                    console.log(`msg : ${fileName} is available}`);
-                    continue;
-                } else {
-                    console.log(`msg : ${fileName} could not be found!`);
-                }
                 const errorMsg = await downloadFile(urlLink, path.join(__dirname ,outputDir, fileName));
                 if (errorMsg) {
                     indexCount++;
@@ -237,43 +229,42 @@ const timeConverter =  (number, unit) => {
                 } else {
                     console.log(`msg: ${fileName}  downloaded`);
                 }
-                //get stats
-
-                console.log('msg: getting stats for file ...');
-                const stats = fs.statSync(path.join(__dirname ,outputDir, fileName));
-                const fileSizeInBytes = stats.size;
-
-                console.log(`msg: file size in bytes : ${fileSizeInBytes}`);
-
-                //add stats obj to jsonObj
-                const durationInMiliSec  = await getMp3Duration(path.join(__dirname ,outputDir, fileName));
-                console.log(`msg: mili sec : ${durationInMiliSec}`);
-                if (durationInMiliSec instanceof Error) {
-                    indexCount++;
-                    continue;
-                }
-                const durationInSec =  Math.round(durationInMiliSec / 1000);
-                const timeObj = timeConverter(durationInMiliSec, 'ms');
-                if (timeObj instanceof Error) continue;
-
-                const jsonObj = {
-                    file_name: fileName,
-                    duration_in_sec: durationInSec,
-                    duration_in_mili_sec: durationInMiliSec,
-                    time : `${timeObj.hours}:${timeObj.minutes}:${timeObj.seconds}`,
-                    index: indexCount,
-                };
-
-                jsonObject[fileName] = jsonObj;
-                let err = writeJsonFile(path.join(__dirname,outputDir, jsonFileName), jsonObject);
-                if (err instanceof Error) {
-                    indexCount++;
-                    continue;
-                }
-                //write the jsonObj to the file
-                console.log(jsonObj);
-                indexCount++;    
             }
+            //get stats
+            console.log('msg: getting stats for file ...');
+            const stats = fs.statSync(path.join(__dirname ,outputDir, fileName));
+            const fileSizeInBytes = stats.size;
+            
+            console.log(`msg: file size in bytes : ${fileSizeInBytes}`);
+
+            //add stats obj to jsonObj
+            const durationInMiliSec  = await getMp3Duration(path.join(__dirname ,outputDir, fileName));
+            console.log(`msg: mili sec : ${durationInMiliSec}`);
+            if (durationInMiliSec instanceof Error) {
+                indexCount++;
+                continue;
+            }
+            const durationInSec =  Math.round(durationInMiliSec / 1000);
+            const timeObj = timeConverter(durationInMiliSec, 'ms');
+            if (timeObj instanceof Error) continue;
+
+            const jsonObj = {
+                file_name: fileName,
+                duration_in_sec: durationInSec,
+                duration_in_mili_sec: durationInMiliSec,
+                time : `${timeObj.hours}:${timeObj.minutes}:${timeObj.seconds}`,
+                index: indexCount,
+            };
+
+            jsonObject[fileName] = jsonObj;
+            let err = writeJsonFile(path.join(__dirname,outputDir, jsonFileName), jsonObject);
+            if (err instanceof Error) {
+                indexCount++;
+                continue;
+            }
+            //write the jsonObj to the file
+            console.log(jsonObj);
+            indexCount++;    
         }
 
     } catch(err) {
