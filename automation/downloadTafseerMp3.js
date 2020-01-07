@@ -9,7 +9,7 @@ const fs = require('fs')
 const downloadFile = (url, dest) => {
 
     return new Promise((resolve, reject) => {
-        return resolve();
+        //return resolve();
         const file = fs.createWriteStream(dest, { flags: "wx" });
 
         const request = http.get(url, response => {
@@ -58,7 +58,10 @@ const readInputFile = async (fileName) => {
             console: false
         });
         rd.on('line', (line) => {
-            fileInput.push(line);
+            line = line.replace(/(\r\n|\n|\r)/gm,"");
+            if (line !== '') {
+                fileInput.push(line);
+            }
         });
         rd.on('error', (error) => {
             reject( new Error(error));
@@ -189,7 +192,7 @@ const timeConverter =  (number, unit) => {
 
         let outputDir = "tafeemQuranMp3";
         const jsonFileName = "fileDownload.json";
-        const fileWithUrls = "mp3DownloadLink123.txt";
+        const fileWithUrls = "mp3DownloadLink.txt";
 
         console.log(`msg : reading file : ${fileWithUrls}`);
         const fileInput = await readInputFile(path.join(__dirname,fileWithUrls));
