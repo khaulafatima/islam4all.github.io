@@ -17,18 +17,26 @@ const downloadFile = (url, dest) => {
                 response.pipe(file);
             } else {
                 file.close();
-                fs.unlink(dest, () => {}); // Delete temp file
-                reject(`Server responded with ${response.statusCode}: ${response.statusMessage}`);
+                fs.unlink(dest, (err) => {
+                    console.log(`error: issue for ${dest}`, err);
+                    reject(`Server responded with ${response.statusCode}: ${response.statusMessage}`);
+                }); // Delete temp file  
             }
         });
 
         request.on("error", err => {
             file.close();
-            fs.unlink(dest, () => {}); // Delete temp file
-            reject(err.message);
+            console.log('msg : deleting file : ------> ', dest);
+            fs.unlink(dest, (err) => {
+                console.log(`error: issue for ${dest}`, err);
+                reject(err.message);
+            }); // Delete temp file
+
         });
 
         file.on("finish", () => {
+            console.log(`msg : file download completed for : ${dest} `);
+            file.close();
             resolve();
         });
 
@@ -59,7 +67,7 @@ const readInputFile = async (fileName) => {
         });
         rd.on('line', (line) => {
             line = line.replace(/(\r\n|\n|\r)/gm,"");
-            if (line !== '') {
+            if (line !== '' && !/^#/.test(line)) {
                 fileInput.push(line);
             }
         });
@@ -80,7 +88,9 @@ const filterMp3FileName = async(fileList) => {
         return Promise.resolve(fileListMp3);
     }
     for( const fileName of fileList) {
-        if (/\/mp3$/.test(fileName)) fileListMp3.push(fileName);
+        if (/mp3$/.test(fileName))  {
+            fileListMp3.push(fileName);
+        }
     }
     return Promise.resolve(fileListMp3);
 };
@@ -192,7 +202,7 @@ const timeConverter =  (number, unit) => {
 
         let outputDir = "tafeemQuranMp3";
         const jsonFileName = "fileDownload.json";
-        const fileWithUrls = "mp3DownloadLink.txt";
+        const fileWithUrls =  '../docs/tafheem_ul_quran.md';
 
         console.log(`msg : reading file : ${fileWithUrls}`);
         const fileInput = await readInputFile(path.join(__dirname,fileWithUrls));
@@ -208,7 +218,7 @@ const timeConverter =  (number, unit) => {
 
         console.log(`msg : filtering mp3 file for output dir ${outputDir}`);
         const filemp3s = await filterMp3FileName(outputDirFiles);
-        console.log(`msg : completed.`);
+        console.log(`msg : mp3 file found. ${filemp3s.length}`);
 
         let indexCount =1 ;
         for(const urlLink of fileInput) {
@@ -219,7 +229,7 @@ const timeConverter =  (number, unit) => {
                 console.log(`msg : could not get fileName ${fileName} for ${urlLink}`);
                 continue;
             }
-            if  ( !jsonObject[fileName] || !_.includes(filemp3s, fileName)) {
+            if  ( !_.includes(filemp3s, fileName) || !jsonObject.hasOwnProperty(fileName) ) {
 
                 const errorMsg = await downloadFile(urlLink, path.join(__dirname ,outputDir, fileName));
                 if (errorMsg) {
