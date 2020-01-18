@@ -192,7 +192,10 @@ const timeConverter =  (number, unit) => {
     m = m % 60
     d = Math.floor(h / 24)
     h = h % 24
-  
+    if (s < 10) s = '0' + s;
+    if (m < 10) m = '0' + m;
+    if (h < 10) h = '0' + h;
+
     return {days: d, hours: h, minutes: m, seconds: s}
 };
 
@@ -202,7 +205,7 @@ const timeConverter =  (number, unit) => {
 
         let outputDir = "tafeemQuranMp3";
         const jsonFileName = "fileDownload.json";
-        const fileWithUrls =  '../docs/tafheem_ul_quran.md';
+        const fileWithUrls = '../docs/tafheem_ul_quran.md'|| './docs/test.txt' ;
 
         console.log(`msg : reading file : ${fileWithUrls}`);
         const fileInput = await readInputFile(path.join(__dirname,fileWithUrls));
@@ -263,6 +266,7 @@ const timeConverter =  (number, unit) => {
                 duration_in_sec: durationInSec,
                 duration_in_mili_sec: durationInMiliSec,
                 time : `${timeObj.hours}:${timeObj.minutes}:${timeObj.seconds}`,
+                length_in_bytes : fileSizeInBytes,
                 index: indexCount,
             };
 
