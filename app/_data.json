@@ -29,6 +29,16 @@
             "itunes_link": null,
             "subscribeonandroid_link": null,
             "spotify" : null
+        },
+        {
+            "publish_status": true,
+            "index_no": 4,
+            "scholar_name": "Tafhim-ul-Quran By Syed Abul Ala Maududi",
+            "wiki_link" : "https://en.wikipedia.org/wiki/Tafhim-ul-Quran",
+            "google_play_link": null,
+            "itunes_link": null,
+            "subscribeonandroid_link": null,
+            "spotify" : null
         }
     ]
 }
