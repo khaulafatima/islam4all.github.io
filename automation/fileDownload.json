@@ -3587,6 +3587,8 @@
         "index": 372
     },
     "al-ankaboot_intro_.mp3": {
+        "title": "Surahe Al-Ankaboot Introduction",
+
         "file_name": "al-ankaboot_intro_.mp3",
         "duration_in_sec": 283,
         "duration_in_mili_sec": 282802,
@@ -3595,6 +3597,8 @@
         "index": 373
     },
     "rukoo01alankaboot.mp3": {
+        "title": "Surahe Al-Ankaboot",
+
         "file_name": "rukoo01alankaboot.mp3",
         "duration_in_sec": 2082,
         "duration_in_mili_sec": 2081959,
@@ -3603,6 +3607,9 @@
         "index": 374
     },
     "rukoo02alankaboot.mp3": {
+
+        "title": "Surahe Al-Ankaboot",
+
         "file_name": "rukoo02alankaboot.mp3",
         "duration_in_sec": 1048,
         "duration_in_mili_sec": 1047902,
@@ -3611,6 +3618,8 @@
         "index": 375
     },
     "rukoo03alankaboot.mp3": {
+        "title": "Surahe Al-Ankaboot",
+
         "file_name": "rukoo03alankaboot.mp3",
         "duration_in_sec": 1013,
         "duration_in_mili_sec": 1013342,
@@ -3619,6 +3628,8 @@
         "index": 376
     },
     "rukoo04alankaboot.mp3": {
+        "title": "Surahe Al-Ankaboot",
+
         "file_name": "rukoo04alankaboot.mp3",
         "duration_in_sec": 1335,
         "duration_in_mili_sec": 1335301,
@@ -3627,6 +3638,8 @@
         "index": 377
     },
     "rukoo05alankaboot.mp3": {
+        "title": "Surahe Al-Ankaboot",
+
         "file_name": "rukoo05alankaboot.mp3",
         "duration_in_sec": 2085,
         "duration_in_mili_sec": 2085355,
@@ -3635,6 +3648,8 @@
         "index": 378
     },
     "rukoo06alankaboot.mp3": {
+        "title": "Surahe Al-Ankaboot",
+
         "file_name": "rukoo06alankaboot.mp3",
         "duration_in_sec": 774,
         "duration_in_mili_sec": 773904,
@@ -3643,6 +3658,8 @@
         "index": 379
     },
     "rukoo07alankaboot.mp3": {
+        "title": "Surahe Al-Ankaboot",
+
         "file_name": "rukoo07alankaboot.mp3",
         "duration_in_sec": 357,
         "duration_in_mili_sec": 357198,
@@ -3651,6 +3668,8 @@
         "index": 380
     },
     "ar-room_intro_.mp3": {
+        "title": "Surahe Ar-Room Introduction",
+
         "file_name": "ar-room_intro_.mp3",
         "duration_in_sec": 906,
         "duration_in_mili_sec": 905561,
@@ -3659,6 +3678,8 @@
         "index": 381
     },
     "rukoo01arroom.mp3": {
+        "title": "Surahe Ar-Room",
+
         "file_name": "rukoo01arroom.mp3",
         "duration_in_sec": 1210,
         "duration_in_mili_sec": 1210096,
@@ -3667,6 +3688,8 @@
         "index": 382
     },
     "rukoo02arroom.mp3": {
+        "title": "Surahe Ar-Room",
+
         "file_name": "rukoo02arroom.mp3",
         "duration_in_sec": 1154,
         "duration_in_mili_sec": 1154351,
@@ -3675,6 +3698,8 @@
         "index": 383
     },
     "rukoo03arroom.mp3": {
+        "title": "Surahe Ar-Room",
+
         "file_name": "rukoo03arroom.mp3",
         "duration_in_sec": 1348,
         "duration_in_mili_sec": 1348362,
@@ -3683,6 +3708,8 @@
         "index": 384
     },
     "rukoo04arroom.mp3": {
+        "title": "Surahe Ar-Room",
+
         "file_name": "rukoo04arroom.mp3",
         "duration_in_sec": 1842,
         "duration_in_mili_sec": 1842416,
@@ -3691,6 +3718,8 @@
         "index": 385
     },
     "rukoo05arroom.mp3": {
+        "title": "Surahe Ar-Room",
+
         "file_name": "rukoo05arroom.mp3",
         "duration_in_sec": 812,
         "duration_in_mili_sec": 811624,
@@ -3699,6 +3728,8 @@
         "index": 386
     },
     "rukoo06arroom.mp3": {
+        "title": "Surahe Ar-Room",
+
         "file_name": "rukoo06arroom.mp3",
         "duration_in_sec": 450,
         "duration_in_mili_sec": 450325,
@@ -3707,6 +3738,8 @@
         "index": 387
     },
     "luqman_intro_.mp3": {
+        "title": "Surahe Luqman Introduction",
+
         "file_name": "luqman_intro_.mp3",
         "duration_in_sec": 169,
         "duration_in_mili_sec": 169091,
@@ -3715,6 +3748,8 @@
         "index": 388
     },
     "rukoo01luqman.mp3": {
+        "title": "Surahe Luqman",
+
         "file_name": "rukoo01luqman.mp3",
         "duration_in_sec": 1200,
         "duration_in_mili_sec": 1200379,
@@ -3723,6 +3758,8 @@
         "index": 389
     },
     "rukoo02luqman.mp3": {
+        "title": "Surahe Luqman",
+
         "file_name": "rukoo02luqman.mp3",
         "duration_in_sec": 1432,
         "duration_in_mili_sec": 1432085,
@@ -3731,6 +3768,8 @@
         "index": 390
     },
     "rukoo03luqman.mp3": {
+        "title": "Surahe Luqman",
+
         "file_name": "rukoo03luqman.mp3",
         "duration_in_sec": 998,
         "duration_in_mili_sec": 998191,
@@ -3739,6 +3778,8 @@
         "index": 391
     },
     "rukoo04luqman.mp3": {
+        "title": "Surahe Luqman",
+
         "file_name": "rukoo04luqman.mp3",
         "duration_in_sec": 920,
         "duration_in_mili_sec": 920163,
@@ -3747,6 +3788,8 @@
         "index": 392
     },
     "as-sijda_intro_.mp3": {
+        "title": "Surahe As Sidja Introduction",
+
         "file_name": "as-sijda_intro_.mp3",
         "duration_in_sec": 328,
         "duration_in_mili_sec": 327602,
@@ -3755,6 +3798,8 @@
         "index": 393
     },
     "rukoo01assijda.mp3": {
+        "title": "Surahe As Sidja",
+
         "file_name": "rukoo01assijda.mp3",
         "duration_in_sec": 2095,
         "duration_in_mili_sec": 2094733,
@@ -3763,6 +3808,8 @@
         "index": 394
     },
     "rukoo02assijda.mp3": {
+        "title": "Surahe As Sidja",
+
         "file_name": "rukoo02assijda.mp3",
         "duration_in_sec": 967,
         "duration_in_mili_sec": 967079,
@@ -3771,6 +3818,8 @@
         "index": 395
     },
     "rukoo03assijda.mp3": {
+        "title": "Surahe As Sidja",
+
         "file_name": "rukoo03assijda.mp3",
         "duration_in_sec": 555,
         "duration_in_mili_sec": 554684,
@@ -3779,6 +3828,8 @@
         "index": 396
     },
     "al-ahzab_intro_.mp3": {
+        "title": "Surahe Al Ahzab introduction",
+
         "file_name": "al-ahzab_intro_.mp3",
         "duration_in_sec": 2391,
         "duration_in_mili_sec": 2391197,
@@ -3787,6 +3838,8 @@
         "index": 397
     },
     "rukoo01alahzab.mp3": {
+        "title": "Surahe Al Ahzab",
+
         "file_name": "rukoo01alahzab.mp3",
         "duration_in_sec": 1580,
         "duration_in_mili_sec": 1579912,
@@ -3795,6 +3848,8 @@
         "index": 398
     },
     "rukoo02alahzab.mp3": {
+        "title": "Surahe Al Ahzab",
+
         "file_name": "rukoo02alahzab.mp3",
         "duration_in_sec": 932,
         "duration_in_mili_sec": 932049,
@@ -3803,6 +3858,8 @@
         "index": 399
     },
     "rukoo03alahzab.mp3": {
+        "title": "Surahe Al Ahzab",
+
         "file_name": "rukoo03alahzab.mp3",
         "duration_in_sec": 820,
         "duration_in_mili_sec": 819696,
@@ -3811,6 +3868,8 @@
         "index": 400
     },
     "rukoo04alahzab.mp3": {
+        "title": "Surahe Al Ahzab",
+
         "file_name": "rukoo04alahzab.mp3",
         "duration_in_sec": 2263,
         "duration_in_mili_sec": 2262727,
@@ -3819,6 +3878,8 @@
         "index": 401
     },
     "rukoo05alahzab.mp3": {
+        "title": "Surahe Al Ahzab",
+
         "file_name": "rukoo05alahzab.mp3",
         "duration_in_sec": 1901,
         "duration_in_mili_sec": 1900617,
@@ -3827,6 +3888,8 @@
         "index": 402
     },
     "rukoo06alahzab.mp3": {
+        "title": "Surahe Al Ahzab",
+
         "file_name": "rukoo06alahzab.mp3",
         "duration_in_sec": 3419,
         "duration_in_mili_sec": 3419429,
@@ -3835,6 +3898,8 @@
         "index": 403
     },
     "rukoo07alahzab.mp3": {
+        "title": "Surahe Al Ahzab",
+
         "file_name": "rukoo07alahzab.mp3",
         "duration_in_sec": 2092,
         "duration_in_mili_sec": 2092304,
@@ -3843,6 +3908,8 @@
         "index": 404
     },
     "rukoo08alahzab.mp3": {
+        "title": "Surahe Al Ahzab",
+
         "file_name": "rukoo08alahzab.mp3",
         "duration_in_sec": 1178,
         "duration_in_mili_sec": 1177678,
@@ -3851,6 +3918,8 @@
         "index": 405
     },
     "rukoo09alahzab.mp3": {
+        "title": "Surahe Al Ahzab",
+
         "file_name": "rukoo09alahzab.mp3",
         "duration_in_sec": 658,
         "duration_in_mili_sec": 657685,
@@ -3859,6 +3928,7 @@
         "index": 406
     },
     "zameema-alahzab.mp3": {
+        "title": "Surahe Al Ahzab",
         "file_name": "zameema-alahzab.mp3",
         "duration_in_sec": 6823,
         "duration_in_mili_sec": 6822740,
@@ -3867,6 +3937,8 @@
         "index": 407
     },
     "_intro_saba.mp3": {
+        "title": "Surahe Saba Introduction",
+
         "file_name": "_intro_saba.mp3",
         "duration_in_sec": 152,
         "duration_in_mili_sec": 152163,
@@ -3875,6 +3947,8 @@
         "index": 408
     },
     "rukoo01saba.mp3": {
+        "title": "Surahe Saba",
+
         "file_name": "rukoo01saba.mp3",
         "duration_in_sec": 1010,
         "duration_in_mili_sec": 1010077,
@@ -3883,6 +3957,7 @@
         "index": 409
     },
     "rukoo02saba.mp3": {
+        "title": "Surahe Saba",
         "file_name": "rukoo02saba.mp3",
         "duration_in_sec": 3831,
         "duration_in_mili_sec": 3830936,
@@ -3891,6 +3966,7 @@
         "index": 410
     },
     "rukoo03saba.mp3": {
+        "title": "Surahe Saba",
         "file_name": "rukoo03saba.mp3",
         "duration_in_sec": 938,
         "duration_in_mili_sec": 937639,
@@ -3899,6 +3975,7 @@
         "index": 411
     },
     "rukoo04saba.mp3": {
+        "title": "Surahe Saba",
         "file_name": "rukoo04saba.mp3",
         "duration_in_sec": 631,
         "duration_in_mili_sec": 630648,
@@ -3907,6 +3984,7 @@
         "index": 412
     },
     "rukoo05saba.mp3": {
+        "title": "Surahe Saba",
         "file_name": "rukoo05saba.mp3",
         "duration_in_sec": 747,
         "duration_in_mili_sec": 747233,
@@ -3915,6 +3993,7 @@
         "index": 413
     },
     "rukoo06saba.mp3": {
+        "title": "Surahe Saba",
         "file_name": "rukoo06saba.mp3",
         "duration_in_sec": 605,
         "duration_in_mili_sec": 605127,
@@ -3923,6 +4002,7 @@
         "index": 414
     },
     "fatir_intro_.mp3": {
+        "title": "Surahe Fatir Introduction",
         "file_name": "fatir_intro_.mp3",
         "duration_in_sec": 230,
         "duration_in_mili_sec": 229956,
@@ -3931,6 +4011,7 @@
         "index": 415
     },
     "rukoo01fatir.mp3": {
+        "title": "Surahe Fatir",
         "file_name": "rukoo01fatir.mp3",
         "duration_in_sec": 680,
         "duration_in_mili_sec": 679628,
@@ -3939,6 +4020,7 @@
         "index": 416
     },
     "rukoo02fatir.mp3": {
+        "title": "Surahe Fatir",
         "file_name": "rukoo02fatir.mp3",
         "duration_in_sec": 1184,
         "duration_in_mili_sec": 1183687,
@@ -3947,6 +4029,7 @@
         "index": 417
     },
     "rukoo03fatir.mp3": {
+        "title": "Surahe Fatir",
         "file_name": "rukoo03fatir.mp3",
         "duration_in_sec": 752,
         "duration_in_mili_sec": 751517,
@@ -3955,6 +4038,7 @@
         "index": 418
     },
     "rukoo04fatir.mp3": {
+        "title": "Surahe Fatir",
         "file_name": "rukoo04fatir.mp3",
         "duration_in_sec": 1405,
         "duration_in_mili_sec": 1405100,
@@ -3963,6 +4047,7 @@
         "index": 419
     },
     "rukoo05fatir.mp3": {
+        "title": "Surahe Fatir",
         "file_name": "rukoo05fatir.mp3",
         "duration_in_sec": 681,
         "duration_in_mili_sec": 680829,
@@ -3971,6 +4056,8 @@
         "index": 420
     },
     "_intro_yaaseen.mp3": {
+        "title": "Surahe Yaaseen Introduction",
+
         "file_name": "_intro_yaaseen.mp3",
         "duration_in_sec": 175,
         "duration_in_mili_sec": 174602,
@@ -3979,6 +4066,8 @@
         "index": 421
     },
     "rukoo01yaaseen.mp3": {
+        "title": "Surahe Yaaseen",
+
         "file_name": "rukoo01yaaseen.mp3",
         "duration_in_sec": 815,
         "duration_in_mili_sec": 814968,
@@ -3987,6 +4076,8 @@
         "index": 422
     },
     "rukoo02yaaseen.mp3": {
+        "title": "Surahe Yaaseen",
+
         "file_name": "rukoo02yaaseen.mp3",
         "duration_in_sec": 1647,
         "duration_in_mili_sec": 1647099,
@@ -3995,6 +4086,8 @@
         "index": 423
     },
     "rukoo03yaaseen.mp3": {
+        "title": "Surahe Yaaseen",
+
         "file_name": "rukoo03yaaseen.mp3",
         "duration_in_sec": 2044,
         "duration_in_mili_sec": 2043716,
@@ -4003,6 +4096,8 @@
         "index": 424
     },
     "rukoo04yaaseen.mp3": {
+        "title": "Surahe Yaaseen",
+
         "file_name": "rukoo04yaaseen.mp3",
         "duration_in_sec": 939,
         "duration_in_mili_sec": 939128,
@@ -4011,6 +4106,8 @@
         "index": 425
     },
     "rukoo05yaaseen.mp3": {
+        "title": "Surahe Yaaseen",
+
         "file_name": "rukoo05yaaseen.mp3",
         "duration_in_sec": 809,
         "duration_in_mili_sec": 808725,
@@ -4019,6 +4116,8 @@
         "index": 426
     },
     "as-saaffat_intro_.mp3": {
+        "title": "Surahe As-Saaffat Introduction",
+
         "file_name": "as-saaffat_intro_.mp3",
         "duration_in_sec": 277,
         "duration_in_mili_sec": 277473,
@@ -4027,6 +4126,8 @@
         "index": 427
     },
     "rukoo01saaffat.mp3": {
+        "title": "Surahe As-Saaffat",
+
         "file_name": "rukoo01saaffat.mp3",
         "duration_in_sec": 1124,
         "duration_in_mili_sec": 1124127,
@@ -4035,6 +4136,8 @@
         "index": 428
     },
     "rukoo02saaffat.mp3": {
+        "title": "Surahe As-Saaffat",
+
         "file_name": "rukoo02saaffat.mp3",
         "duration_in_sec": 1636,
         "duration_in_mili_sec": 1636101,
@@ -4043,6 +4146,8 @@
         "index": 429
     },
     "rukoo03saaffat.mp3": {
+        "title": "Surahe As-Saaffat",
+
         "file_name": "rukoo03saaffat.mp3",
         "duration_in_sec": 2414,
         "duration_in_mili_sec": 2414237,
@@ -4051,6 +4156,8 @@
         "index": 430
     },
     "rukoo04saaffat.mp3": {
+        "title": "Surahe As-Saaffat",
+
         "file_name": "rukoo04saaffat.mp3",
         "duration_in_sec": 1125,
         "duration_in_mili_sec": 1125120,
@@ -4059,6 +4166,8 @@
         "index": 431
     },
     "rukoo05saaffat.mp3": {
+        "title": "Surahe As-Saaffat",
+
         "file_name": "rukoo05saaffat.mp3",
         "duration_in_sec": 1577,
         "duration_in_mili_sec": 1576647,
@@ -4067,6 +4176,8 @@
         "index": 432
     },
     "intro_suad_.mp3": {
+        "title": "Surahe Suad Introduction",
+
         "file_name": "intro_suad_.mp3",
         "duration_in_sec": 627,
         "duration_in_mili_sec": 627200,
@@ -4075,6 +4186,8 @@
         "index": 433
     },
     "rukoo01suad.mp3": {
+        "title": "Surahe Suad",
+
         "file_name": "rukoo01suad.mp3",
         "duration_in_sec": 797,
         "duration_in_mili_sec": 797127,
@@ -4083,6 +4196,8 @@
         "index": 434
     },
     "rukoo02suad.mp3": {
+        "title": "Surahe Suad",
+
         "file_name": "rukoo02suad.mp3",
         "duration_in_sec": 1918,
         "duration_in_mili_sec": 1917910,
@@ -4091,6 +4206,7 @@
         "index": 435
     },
     "rukoo03suad.mp3": {
+        "title": "Surahe Suad",
         "file_name": "rukoo03suad.mp3",
         "duration_in_sec": 2012,
         "duration_in_mili_sec": 2012447,
@@ -4099,6 +4215,7 @@
         "index": 436
     },
     "rukoo04suad.mp3": {
+        "title": "Surahe Suad",
         "file_name": "rukoo04suad.mp3",
         "duration_in_sec": 1465,
         "duration_in_mili_sec": 1464790,
@@ -4107,6 +4224,7 @@
         "index": 437
     },
     "rukoo05suad.mp3": {
+        "title": "Surahe Suad",
         "file_name": "rukoo05suad.mp3",
         "duration_in_sec": 929,
         "duration_in_mili_sec": 928731,
@@ -4115,6 +4233,8 @@
         "index": 438
     },
     "az-zumar_intro_.mp3": {
+        "title": "Surahe Az-Zumar Introduction",
+
         "file_name": "az-zumar_intro_.mp3",
         "duration_in_sec": 147,
         "duration_in_mili_sec": 146913,
@@ -4123,6 +4243,8 @@
         "index": 439
     },
     "rukoo01zumar.mp3": {
+        "title": "Surahe Az-Zumar",
+
         "file_name": "rukoo01zumar.mp3",
         "duration_in_sec": 1934,
         "duration_in_mili_sec": 1934367,
@@ -4131,6 +4253,8 @@
         "index": 440
     },
     "rukoo02zumar.mp3": {
+        "title": "Surahe Az-Zumar",
+
         "file_name": "rukoo02zumar.mp3",
         "duration_in_sec": 732,
         "duration_in_mili_sec": 731611,
@@ -4139,6 +4263,8 @@
         "index": 441
     },
     "rukoo03zumar.mp3": {
+        "title": "Surahe Az-Zumar",
+
         "file_name": "rukoo03zumar.mp3",
         "duration_in_sec": 1250,
         "duration_in_mili_sec": 1249620,
@@ -4147,6 +4273,8 @@
         "index": 442
     },
     "rukoo04zumar.mp3": {
+        "title": "Surahe Az-Zumar",
+
         "file_name": "rukoo04zumar.mp3",
         "duration_in_sec": 638,
         "duration_in_mili_sec": 638485,
@@ -4155,6 +4283,8 @@
         "index": 443
     },
     "rukoo05zumar.mp3": {
+        "title": "Surahe Az-Zumar",
+
         "file_name": "rukoo05zumar.mp3",
         "duration_in_sec": 770,
         "duration_in_mili_sec": 770377,
@@ -4163,6 +4293,8 @@
         "index": 444
     },
     "rukoo06zumar.mp3": {
+        "title": "Surahe Az-Zumar",
+
         "file_name": "rukoo06zumar.mp3",
         "duration_in_sec": 522,
         "duration_in_mili_sec": 521744,
@@ -4171,6 +4303,8 @@
         "index": 445
     },
     "rukoo07zumar.mp3": {
+        "title": "Surahe Az-Zumar",
+
         "file_name": "rukoo07zumar.mp3",
         "duration_in_sec": 455,
         "duration_in_mili_sec": 454870,
@@ -4179,6 +4313,8 @@
         "index": 446
     },
     "rukoo08zumar.mp3": {
+        "title": "Surahe Az-Zumar",
+
         "file_name": "rukoo08zumar.mp3",
         "duration_in_sec": 315,
         "duration_in_mili_sec": 314802,
@@ -4187,6 +4323,8 @@
         "index": 447
     },
     "al-momin_intro_.mp3": {
+        "title": "Surahe Al-Momin Introduction",
+
         "file_name": "al-momin_intro_.mp3",
         "duration_in_sec": 437,
         "duration_in_mili_sec": 437185,
@@ -4195,6 +4333,8 @@
         "index": 448
     },
     "rukoo01momin.mp3": {
+        "title": "Surahe Al-Momin",
+
         "file_name": "rukoo01momin.mp3",
         "duration_in_sec": 1227,
         "duration_in_mili_sec": 1226527,
@@ -4203,6 +4343,8 @@
         "index": 449
     },
     "rukoo02momin.mp3": {
+        "title": "Surahe Al-Momin",
+
         "file_name": "rukoo02momin.mp3",
         "duration_in_sec": 1104,
         "duration_in_mili_sec": 1103517,
@@ -4211,6 +4353,8 @@
         "index": 450
     },
     "rukoo03momin.mp3": {
+        "title": "Surahe Al-Momin",
+
         "file_name": "rukoo03momin.mp3",
         "duration_in_sec": 905,
         "duration_in_mili_sec": 905300,
@@ -4219,6 +4363,8 @@
         "index": 451
     },
     "rukoo04momin.mp3": {
+        "title": "Surahe Al-Momin",
+
         "file_name": "rukoo04momin.mp3",
         "duration_in_sec": 887,
         "duration_in_mili_sec": 886753,
@@ -4227,6 +4373,8 @@
         "index": 452
     },
     "rukoo05momin.mp3": {
+        "title": "Surahe Al-Momin",
+
         "file_name": "rukoo05momin.mp3",
         "duration_in_sec": 880,
         "duration_in_mili_sec": 880065,
@@ -4235,6 +4383,8 @@
         "index": 453
     },
     "rukoo06momin.mp3": {
+        "title": "Surahe Al-Momin",
+
         "file_name": "rukoo06momin.mp3",
         "duration_in_sec": 1647,
         "duration_in_mili_sec": 1647256,
@@ -4243,6 +4393,8 @@
         "index": 454
     },
     "rukoo07momin.mp3": {
+        "title": "Surahe Al-Momin",
+
         "file_name": "rukoo07momin.mp3",
         "duration_in_sec": 858,
         "duration_in_mili_sec": 858044,
@@ -4251,6 +4403,7 @@
         "index": 455
     },
     "rukoo08momin.mp3": {
+        "title": "Surahe Al-Momin",
         "file_name": "rukoo08momin.mp3",
         "duration_in_sec": 513,
         "duration_in_mili_sec": 512627,
@@ -4259,6 +4412,8 @@
         "index": 456
     },
     "rukoo09momin.mp3": {
+        "title": "Surahe Al-Momin",
+
         "file_name": "rukoo09momin.mp3",
         "duration_in_sec": 488,
         "duration_in_mili_sec": 487758,
@@ -4267,6 +4422,8 @@
         "index": 457
     },
     "hameemas-sijda_intro_.mp3": {
+        "title": "Surahe As-Sijda Introduction",
+
         "file_name": "hameemas-sijda_intro_.mp3",
         "duration_in_sec": 900,
         "duration_in_mili_sec": 899866,
@@ -4275,6 +4432,8 @@
         "index": 458
     },
     "rukoo01hameemassijda.mp3": {
+        "title": "Surahe As-Sijda",
+
         "file_name": "rukoo01hameemassijda.mp3",
         "duration_in_sec": 722,
         "duration_in_mili_sec": 721868,
@@ -4283,6 +4442,8 @@
         "index": 459
     },
     "rukoo02hameemassijda.mp3": {
+        "title": "Surahe As-Sijda",
+
         "file_name": "rukoo02hameemassijda.mp3",
         "duration_in_sec": 1579,
         "duration_in_mili_sec": 1578893,
@@ -4291,6 +4452,8 @@
         "index": 460
     },
     "rukoo03hameemassijda.mp3": {
+        "title": "Surahe As-Sijda",
+
         "file_name": "rukoo03hameemassijda.mp3",
         "duration_in_sec": 735,
         "duration_in_mili_sec": 735112,
@@ -4299,6 +4462,8 @@
         "index": 461
     },
     "rukoo04hameemassijda.mp3": {
+        "title": "Surahe As-Sijda",
+
         "file_name": "rukoo04hameemassijda.mp3",
         "duration_in_sec": 670,
         "duration_in_mili_sec": 669936,
@@ -4307,6 +4472,8 @@
         "index": 462
     },
     "rukoo05hameemassijda.mp3": {
+        "title": "Surahe As-Sijda",
+
         "file_name": "rukoo05hameemassijda.mp3",
         "duration_in_sec": 1838,
         "duration_in_mili_sec": 1837819,
@@ -4315,6 +4482,8 @@
         "index": 463
     },
     "rukoo06hameemassijda.mp3": {
+        "title": "Surahe As-Sijda",
+
         "file_name": "rukoo06hameemassijda.mp3",
         "duration_in_sec": 1432,
         "duration_in_mili_sec": 1432059,
