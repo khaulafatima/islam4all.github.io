@@ -46,6 +46,9 @@
                     <itunes:image href="<%= public.khurram_murrad._data.channel_info.image.url %>"/>
                     <itunes:explicit>clean</itunes:explicit>
                     <itunes:duration><%= public.khurram_murrad._data.podcast_list[i].itunes.duration %></itunes:duration>
+                    <% if (public.khurram_murrad._data.podcast_list[i].itunes.type) {-%>
+                        <itunes:type><%= public.khurram_murrad._data.podcast_list[i].itunes.duration %></itunes:type>
+                    <% } -%>
                 </item>
             <% } -%>
         <% } -%>
