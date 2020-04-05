@@ -46,3 +46,7 @@ plz refer to the [blogpost](https://dev.to/codemouse92/self-hosting-a-podcast-4b
 
 ### Resource Files
  * Link of [mp3 files](./automation/docs/tafheem_ul_quran.md) of tafheem-ul-Quran.
+ 
+ 
+ ### Some learning 
+ * Max episode supported by Google Podcast is 125 episode and apple itune 300.
