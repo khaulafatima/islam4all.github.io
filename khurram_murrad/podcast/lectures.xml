@@ -14,7 +14,7 @@
         <language>en-us</language>
         <creativeCommons:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
         <pubDate>en-us</pubDate>
-        <lastBuildDate>Mon, 04Nov 2019 22:39:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15Apr 2020 13:00:00 GMT</lastBuildDate>
         <image>
             <url>https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png</url>
             <title>Khurram Murrad Lectures</title>
@@ -33,6 +33,25 @@
             <itunes:email>khaulafatimalko@gmail.com</itunes:email>
         </itunes:owner>
                                     <item>
+                    <title>Lecture 4: Mohababath Ki  Zindagi</title>
+                    <link>https://ia801501.us.archive.org/20/items/khurrammuradmohabbathkizindagi/Khurram-Murad-Mohabbath-Ki-Zindagi.mp3</link>
+                    <description>Urdu Speech by Islamic Scholar Khurram Murad on life of Love and its impact.</description>
+                    <pubDate>Sun, 15Apr 2020 13:00:00 GMT</pubDate>
+                    <guid isPermaLink="true">https://ia801501.us.archive.org/20/items/khurrammuradmohabbathkizindagi/Khurram-Murad-Mohabbath-Ki-Zindagi.mp3</guid>
+                    <media:content medium="audio" url="https://ia801501.us.archive.org/20/items/khurrammuradmohabbathkizindagi/Khurram-Murad-Mohabbath-Ki-Zindagi.mp3" type="audio/mpeg" isDefault="true" expression="full" duration="2100">
+                        <media:title type="plain">Lecture 4: Mohababath Ki  Zindagi</media:title>
+                        <media:description>Urdu Speech by Islamic Scholar Khurram Murad on life of Love and its impact.</media:description>
+                        <media:rating scheme="urn:simple">nonadult</media:rating>
+                        <media:thumbnail url="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png"/>
+                        <media:keywords>islam, urdu , hindi , Religion, spirituality, Love</media:keywords>
+                    </media:content>
+                    <enclosure url="https://ia801501.us.archive.org/20/items/khurrammuradmohabbathkizindagi/Khurram-Murad-Mohabbath-Ki-Zindagi.mp3" length="16798724" type="audio/mpeg"/>
+                    <itunes:image href="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png"/>
+                    <itunes:explicit>clean</itunes:explicit>
+                    <itunes:duration>00:35:00</itunes:duration>
+                                            <itunes:type>00:35:00</itunes:type>
+                                    </item>
+                                                <item>
                     <title>Lecture 3: Dunya Aur Aakhrat</title>
                     <link>https://ia903003.us.archive.org/25/items/dunyaauraakhratimproved/DunyaAurAakhratImproved.mp3</link>
                     <description>Urdu Speech by Islamic Scholar Khurram Murad on life and Judgement day.</description>
@@ -43,13 +62,14 @@
                         <media:description>Urdu Speech by Islamic Scholar Khurram Murad on life and Judgement day.</media:description>
                         <media:rating scheme="urn:simple">nonadult</media:rating>
                         <media:thumbnail url="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png"/>
-                        <media:keywords>islam, urdu , hindi , Religion, spirituality, patience</media:keywords>
+                        <media:keywords>islam, urdu , hindi , Religion, spirituality</media:keywords>
                     </media:content>
                     <enclosure url="https://ia903003.us.archive.org/25/items/dunyaauraakhratimproved/DunyaAurAakhratImproved.mp3" length="39047937" type="audio/mpeg"/>
                     <itunes:image href="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png"/>
                     <itunes:explicit>clean</itunes:explicit>
                     <itunes:duration>00:40:40</itunes:duration>
-                </item>
+                                            <itunes:type>00:40:40</itunes:type>
+                                    </item>
                                                 <item>
                     <title>Lecture 2: Sabr</title>
                     <link>https://ia601404.us.archive.org/34/items/sabar_201907/Sabar.mp3</link>
@@ -67,7 +87,8 @@
                     <itunes:image href="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png"/>
                     <itunes:explicit>clean</itunes:explicit>
                     <itunes:duration>00:53:38</itunes:duration>
-                </item>
+                                            <itunes:type>00:53:38</itunes:type>
+                                    </item>
                                                 <item>
                     <title>Lecture 1: Talawat E Quran Majeed Ke Adab</title>
                     <link>https://ia801405.us.archive.org/27/items/talawatequranmajeedkeadab/Talawat_e_Quran_Majeed_Ke_Adab.mp3</link>
@@ -85,6 +106,7 @@
                     <itunes:image href="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png"/>
                     <itunes:explicit>clean</itunes:explicit>
                     <itunes:duration>1:01:43</itunes:duration>
-                </item>
+                                            <itunes:type>1:01:43</itunes:type>
+                                    </item>
                         </channel>
 </rss>
