@@ -25,13 +25,26 @@
         }
     },
     "podcast_list":  [
-
+        {
+            "publish_status": true,
+            "title": "Lecture 5: Quran Hakeem Aur Hum",
+            "link": "https://ia801501.us.archive.org/20/items/khurranmurradquranhakeemaurhum/KhurranMurrad-Quran-Hakeem-aur-Hum.mp3",
+            "description": "Urdu Speech by Islamic Scholar Khurram Murad about the holy book Quran and its relation ship with us.",
+            "pubDate": "Sun, 06Apr 2020 16:00:00 GMT",
+            "duration_in_sec": "2965",
+            "length_in_bytes": "59308473",
+            "keywords": "islam, urdu , hindi , Religion, spirituality, Love",
+            "itunes": {
+                "duration": "00:49:25",
+                "type": "episodic"
+            }
+        },
         {
             "publish_status": true,
             "title": "Lecture 4: Mohababath Ki  Zindagi",
             "link": "https://ia801501.us.archive.org/20/items/khurrammuradmohabbathkizindagi/Khurram-Murad-Mohabbath-Ki-Zindagi.mp3",
             "description": "Urdu Speech by Islamic Scholar Khurram Murad on life of Love and its impact.",
-            "pubDate": "Sun, 15Apr 2020 13:00:00 GMT",
+            "pubDate": "Sun, 05Apr 2020 13:00:00 GMT",
             "duration_in_sec": "2100",
             "length_in_bytes": "16798724",
             "keywords": "islam, urdu , hindi , Religion, spirituality, Love",
