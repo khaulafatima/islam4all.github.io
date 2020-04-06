@@ -39,6 +39,10 @@ This year image theme of the project is Space.
 
 * contribution for image banner creator for various speaker.
 
+* automation script that compiles and copy the changes from folder `www` to `gh-pages-www` for commit
+
+* TF : devide the podcast into 6 volume due to max count.
+
 ### Dedication
 Dedicated to all the people, who are trying to remove darkness of *ignorance* with light of *love* and *knowledge*!.
 
