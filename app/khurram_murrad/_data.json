@@ -27,6 +27,20 @@
     "podcast_list":  [
         {
             "publish_status": true,
+            "title": "Lecture 6: Ramazaan Mubarak Ka Payghaam",
+            "link": "https://ia801502.us.archive.org/8/items/khurrammuradramazaanmubarakkapayghaamimproved/Khurram_Murad-Ramazaan-Mubarak-Ka-Payghaam-Improved.mp3",
+            "description": "Urdu Speech by Islamic Scholar Khurram Murad about the holy month Ramzaan and its relation ship with us.",
+            "pubDate": "Sun, 08Apr 2020 16:00:00 GMT",
+            "duration_in_sec": "3412",
+            "length_in_bytes": "27295340",
+            "keywords": "islam, urdu , hindi , Religion, spirituality, Love",
+            "itunes": {
+                "duration": "00:56:52",
+                "type": "episodic"
+            }
+        },
+        {
+            "publish_status": true,
             "title": "Lecture 5: Quran Hakeem Aur Hum",
             "link": "https://ia801501.us.archive.org/20/items/khurranmurradquranhakeemaurhum/KhurranMurrad-Quran-Hakeem-aur-Hum.mp3",
             "description": "Urdu Speech by Islamic Scholar Khurram Murad about the holy book Quran and its relation ship with us.",
