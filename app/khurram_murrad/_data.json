@@ -27,6 +27,20 @@
     "podcast_list":  [
         {
             "publish_status": true,
+            "title": "Lecture 7: Tazkiyah Nafs Ka Tariqah",
+            "link": "https://ia601405.us.archive.org/33/items/khurram-murad-tazkiyah-nafs-ka-tariqah/Khurram_Murad-Tazkiyah-Nafs-Ka-Tariqah.mp3",
+            "description": "Urdu Speech by Islamic Scholar Khurram Murad about steps to do Tazkiyah Nafs.",
+            "pubDate": "Thu, 25Jun 2020 16:00:00 GMT",
+            "duration_in_sec": "2320",
+            "length_in_bytes": "16223298",
+            "keywords": "islam, urdu , hindi , Religion, spirituality, Love",
+            "itunes": {
+                "duration": "00:38:40",
+                "type": "episodic"
+            }
+        },
+        {
+            "publish_status": true,
             "title": "Lecture 6: Ramazaan Mubarak Ka Payghaam",
             "link": "https://ia801502.us.archive.org/8/items/khurrammuradramazaanmubarakkapayghaamimproved/Khurram_Murad-Ramazaan-Mubarak-Ka-Payghaam-Improved.mp3",
             "description": "Urdu Speech by Islamic Scholar Khurram Murad about the holy month Ramzaan and its relation ship with us.",
