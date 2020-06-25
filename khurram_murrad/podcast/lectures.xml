@@ -14,7 +14,7 @@
         <language>en-us</language>
         <creativeCommons:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
         <pubDate>en-us</pubDate>
-        <lastBuildDate>Sun, 08Apr 2020 16:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25Jun 2020 16:00:00 GMT</lastBuildDate>
         <image>
             <url>https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png</url>
             <title>Khurram Murrad Lectures</title>
@@ -33,6 +33,25 @@
             <itunes:email>khaulafatimalko@gmail.com</itunes:email>
         </itunes:owner>
                                     <item>
+                    <title>Lecture 7: Tazkiyah Nafs Ka Tariqah</title>
+                    <link>https://ia601405.us.archive.org/33/items/khurram-murad-tazkiyah-nafs-ka-tariqah/Khurram_Murad-Tazkiyah-Nafs-Ka-Tariqah.mp3</link>
+                    <description>Urdu Speech by Islamic Scholar Khurram Murad about steps to do Tazkiyah Nafs.</description>
+                    <pubDate>Thu, 25Jun 2020 16:00:00 GMT</pubDate>
+                    <guid isPermaLink="true">https://ia601405.us.archive.org/33/items/khurram-murad-tazkiyah-nafs-ka-tariqah/Khurram_Murad-Tazkiyah-Nafs-Ka-Tariqah.mp3</guid>
+                    <media:content medium="audio" url="https://ia601405.us.archive.org/33/items/khurram-murad-tazkiyah-nafs-ka-tariqah/Khurram_Murad-Tazkiyah-Nafs-Ka-Tariqah.mp3" type="audio/mpeg" isDefault="true" expression="full" duration="2320">
+                        <media:title type="plain">Lecture 7: Tazkiyah Nafs Ka Tariqah</media:title>
+                        <media:description>Urdu Speech by Islamic Scholar Khurram Murad about steps to do Tazkiyah Nafs.</media:description>
+                        <media:rating scheme="urn:simple">nonadult</media:rating>
+                        <media:thumbnail url="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png"/>
+                        <media:keywords>islam, urdu , hindi , Religion, spirituality, Love</media:keywords>
+                    </media:content>
+                    <enclosure url="https://ia601405.us.archive.org/33/items/khurram-murad-tazkiyah-nafs-ka-tariqah/Khurram_Murad-Tazkiyah-Nafs-Ka-Tariqah.mp3" length="16223298" type="audio/mpeg"/>
+                    <itunes:image href="https://khaulafatima.github.io/islam4all.github.io/khurram_murrad/img/mars1400x1400.png"/>
+                    <itunes:explicit>clean</itunes:explicit>
+                    <itunes:duration>00:38:40</itunes:duration>
+                                            <itunes:type>00:38:40</itunes:type>
+                                    </item>
+                                                <item>
                     <title>Lecture 6: Ramazaan Mubarak Ka Payghaam</title>
                     <link>https://ia801502.us.archive.org/8/items/khurrammuradramazaanmubarakkapayghaamimproved/Khurram_Murad-Ramazaan-Mubarak-Ka-Payghaam-Improved.mp3</link>
                     <description>Urdu Speech by Islamic Scholar Khurram Murad about the holy month Ramzaan and its relation ship with us.</description>
